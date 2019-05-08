@@ -11,6 +11,10 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Mini Profiler" t="Include">
+          <e p="changelog.txt" t="Include" />
+          <e p="README.txt" t="Include" />
+        </e>
         <e p="ProCore" t="Include">
           <e p="ProGrids" t="Include">
             <e p="About" t="Include">

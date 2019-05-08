@@ -28,28 +28,14 @@ public class GridMaker : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(Prefab, Startpos, Quaternion.identity);
 
             for (int i = 0; i < GridSize; i++)
             {
-                Vector3 newPos = new Vector3(Startpos.x + 1,Startpos.y, Startpos.z);
                 for (int j = 0; j < GridSize; j++)
                 {
                    
-                    Instantiate(Prefab, newPos, Quaternion.identity);  
-
-
+                    Instantiate(Prefab, new Vector3(Startpos.x +j, 0, Startpos.z +i), Quaternion.identity);
                 }
-                
-                if (newPos.x >= GridSize)
-                {
-                    Vector3 newRow =  new Vector3(newPos.x ,newPos.y + 1, newPos.z);
-                    Instantiate(Prefab, newRow, Quaternion.identity);
-
-                }
-                
-            
-
             }  
         }  
     }

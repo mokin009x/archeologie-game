@@ -9,7 +9,7 @@ using UnityEngine;
 public class MeshController : MonoBehaviour
 {
 
-    public Material mat;
+    /*public Material mat;
 
     public Resolution resolution;
     
@@ -79,5 +79,5 @@ public class MeshController : MonoBehaviour
         mesh.RecalculateBounds();
         mesh.RecalculateNormals();
         
-    }
+    }*/
 }
