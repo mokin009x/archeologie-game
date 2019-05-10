@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dummy : MonoBehaviour
+public class playerControlScript : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,14 +13,9 @@ public class Dummy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        
-            
-          
-    }
-
-    public void MobileDebugTest()
-    {
-        Debug.Log("mobile test");
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            SceneSwitchScript.instance.SwitchScene("scene switch test scene");
+        }
     }
 }
