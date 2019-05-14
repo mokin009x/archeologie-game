@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 945111224}
   m_Layer: 0
   m_Name: Smash Point
-  m_TagString: Untagged
+  m_TagString: Smash Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 945111219}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.58, y: 1, z: 10.37}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 1811264301}
   m_Father: {fileID: 4828958588300721933}
@@ -206,6 +206,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &9127193777092905641
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3528062629433037602}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 5060444177187149915, guid: 96abd8b7012a30546b25d2bece322020, type: 3}
 --- !u!1 &4828958588300721934
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,11 +273,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4828958588300721933}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 96abd8b7012a30546b25d2bece322020,
-        type: 3}
-      propertyPath: m_Name
-      value: Stone Layer
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 96abd8b7012a30546b25d2bece322020,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -329,6 +338,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 96abd8b7012a30546b25d2bece322020,
+        type: 3}
+      propertyPath: m_Name
+      value: Stone Layer
+      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 96abd8b7012a30546b25d2bece322020,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -336,6 +350,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 015bf0ef97bf5bc45b3c7098a14b2c38, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96abd8b7012a30546b25d2bece322020, type: 3}
+--- !u!1 &3528062629433037602 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 96abd8b7012a30546b25d2bece322020,
+    type: 3}
+  m_PrefabInstance: {fileID: 4888621466811140651}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &481159053816963377 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 96abd8b7012a30546b25d2bece322020,

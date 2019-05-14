@@ -18,6 +18,7 @@ public class SmashPoint : MonoBehaviour
         {
             Destroy(stoneLayer);
         }
+        Destroy(this);
 
     }
 }

@@ -216,6 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9321d58f354bbd241836d6f79a1c0943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particle: {fileID: 0}
 --- !u!1 &651786938
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,6 +227,7 @@ GameObject:
   m_Component:
   - component: {fileID: 651786940}
   - component: {fileID: 651786941}
+  - component: {fileID: 651786939}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -233,6 +235,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &651786939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651786938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9321d58f354bbd241836d6f79a1c0943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: {fileID: 5426510653912719815, guid: 70d934bc773d8424ea963a9e77e9c9cb,
+    type: 3}
 --- !u!4 &651786940
 Transform:
   m_ObjectHideFlags: 0
@@ -260,7 +276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   layers:
-  - {fileID: 888779815727796721, guid: 8af0594474b54cd488f3b5ad5150e145, type: 3}
+  - {fileID: 4828958588300721934, guid: 3a8459b8fc81c2249820ddd1af8fcb10, type: 3}
   - {fileID: 4828958588300721934, guid: 3a8459b8fc81c2249820ddd1af8fcb10, type: 3}
   holeDepth: 10
 --- !u!1001 &662578712
@@ -610,6 +626,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1901567642 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 0746ec255d6861f4f8aa7e54892f57df,
+    type: 3}
+  m_PrefabInstance: {fileID: 662578712}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1901567643
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901567642}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -2232952877369940510, guid: 0746ec255d6861f4f8aa7e54892f57df, type: 3}
 --- !u!1 &2136550731
 GameObject:
   m_ObjectHideFlags: 0
