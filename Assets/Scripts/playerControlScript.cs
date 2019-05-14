@@ -12,6 +12,7 @@ public class playerControlScript : MonoBehaviour
     private float height;
     public GameObject particle;
     public GameObject dragParticle;
+    public RaycastHit dragHit;
 
 
     void Awake()
@@ -67,13 +68,15 @@ public class playerControlScript : MonoBehaviour
                 
 
                 // Create a particle if hit
-                if (Physics.Raycast(ray, out hit, Mathf.Infinity))
-                {
-                    Instantiate(dragParticle, hit.point, Quaternion.identity);
-                }
+                Physics.Raycast(ray, out hit, Mathf.Infinity);
 
-                
+                if (hit.collider.gameObject.tag == "Dirt")
+                {
+                    Destroy(hit.collider.gameObject);
+  
+                }
             }
+            
         }
     
 
