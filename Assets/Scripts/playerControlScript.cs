@@ -15,31 +15,48 @@ public class playerControlScript : MonoBehaviour
 
     void Awake()
     {
-        width = (float)Screen.width / 2.0f;
+        /*width = (float)Screen.width / 2.0f;
         height = (float)Screen.height / 2.0f;
 
         // Position used for the cube.
-        position = new Vector3(0.0f, 0.0f, 0.0f);
+        position = new Vector3(0.0f, 0.0f, 0.0f);*/
     }
 
     void OnGUI()
     {
-        // Compute a fontSize based on the size of the screen width.
+        /*// Compute a fontSize based on the size of the screen width.
         GUI.skin.label.fontSize = (int)(Screen.width / 25.0f);
 
         GUI.Label(new Rect(20, 20, width, height * 0.25f),
             "x = " + position.x.ToString("f2") +
-            ", y = " + position.y.ToString("f2"));
+            ", y = " + position.y.ToString("f2"));*/
     }
 
     void Update()
     {
-        /*
+    
+        for (int i = 0; i < Input.touchCount; ++i)
+        {
+            if (Input.GetTouch(i).phase == TouchPhase.Began)
+            {
+                // Construct a ray from the current touch coordinates
+                Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
+                RaycastHit hit;
+                
 
-        /*
-         * option 1
-         #1#
-        // Handle screen touches.
+                // Create a particle if hit
+                if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+                {
+/*
+                   hit.collider.GetComponent<>()
+*/
+                }
+            }
+        }
+    
+
+       
+        /*// Handle screen touches.
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
@@ -58,21 +75,26 @@ public class playerControlScript : MonoBehaviour
 
           
         }*/
-        
-            for (int i = 0; i < Input.touchCount; ++i)
-            {
-                if (Input.GetTouch(i).phase == TouchPhase.Began)
-                {
-                    // Construct a ray from the current touch coordinates
-                    Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
 
-                    // Create a particle if hit
-                    if (Physics.Raycast(ray))
-                    {
-                        Instantiate(particle, transform.position, transform.rotation);
-                    }
+        
+        
+        /*
+
+        for (int i = 0; i < Input.touchCount; ++i)
+        {
+            if (Input.GetTouch(i).phase == TouchPhase.Began)
+            {
+                // Construct a ray from the current touch coordinates
+                Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
+
+                // Create a particle if hit
+                if (Physics.Raycast(ray))
+                {
+                    Instantiate(particle, transform.position, transform.rotation);
                 }
             }
-        
+        }
+*/
+
     }
 }
