@@ -4,12 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64a96eef-bb92-4bbb-9069-fd2e133f237f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Dirt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Dirt.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Real Dirt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Real Dirt.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/playerControlScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playerControlScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-    </list>
+    <list default="true" id="64a96eef-bb92-4bbb-9069-fd2e133f237f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/playerControlScript.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
+            <state relative-caret-position="464">
+              <caret line="69" column="43" lean-forward="true" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
               <folding>
                 <marker date="1557828389512" expanded="true" signature="6:138" ph="..." />
                 <marker date="1557828389512" expanded="true" signature="188:3515" ph="{...}" />
@@ -236,12 +231,12 @@
       <workItem from="1557388103747" duration="1964000" />
       <workItem from="1557486842467" duration="10626000" />
       <workItem from="1557742304587" duration="1006000" />
-      <workItem from="1557818680632" duration="8517000" />
+      <workItem from="1557818680632" duration="9125000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36791000" />
+    <option name="totallyTimeSpent" value="37399000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -254,7 +249,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2457356" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -435,8 +429,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/playerControlScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
+        <state relative-caret-position="464">
+          <caret line="69" column="43" lean-forward="true" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
           <folding>
             <marker date="1557828389512" expanded="true" signature="6:138" ph="..." />
             <marker date="1557828389512" expanded="true" signature="188:3515" ph="{...}" />
