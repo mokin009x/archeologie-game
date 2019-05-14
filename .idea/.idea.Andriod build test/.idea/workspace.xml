@@ -1,9 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="64a96eef-bb92-4bbb-9069-fd2e133f237f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GridMaker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GridMaker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MeshController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MeshController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Andriod build test/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Andriod build test/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Andriod build test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Andriod build test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cube 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cube 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/Editor/pg_AboutWindow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/Editor/pg_AboutWindow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/Images.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/Images/Banner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/Images/Banner.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/Images/ProBuilder_AssetStore_Icon_96px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/Images/ProBuilder_AssetStore_Icon_96px.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/Images/ProGrids_AssetStore_Icon_96px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/Images/ProGrids_AssetStore_Icon_96px.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/Images/ProGroups_AssetStore_Icon_96px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/Images/ProGroups_AssetStore_Icon_96px.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/Images/Prototype_AssetStore_Icon_96px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/Images/Prototype_AssetStore_Icon_96px.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/Images/QuickBrush_AssetStore_Icon_96px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/Images/QuickBrush_AssetStore_Icon_96px.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/Images/QuickDecals_AssetStore_Icon_96px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/Images/QuickDecals_AssetStore_Icon_96px.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/Images/QuickEdit_AssetStore_Icon_96px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/Images/QuickEdit_AssetStore_Icon_96px.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/changelog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/changelog.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/pc_AboutEntry_ProGrids.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/About/pc_AboutEntry_ProGrids.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Classes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Classes/pg_Constant.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Classes/pg_Constant.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Classes/pg_Enum.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Classes/pg_Enum.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Classes/pg_IconUtility.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Classes/pg_IconUtility.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Classes/pg_IgnoreSnapAttribute.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Classes/pg_IgnoreSnapAttribute.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Classes/pg_SceneMeshRender.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Classes/pg_SceneMeshRender.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Classes/pg_Util.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Classes/pg_Util.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Editor/pg_Editor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Editor/pg_Editor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Editor/pg_GridRenderer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Editor/pg_GridRenderer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Editor/pg_ParameterWindow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Editor/pg_ParameterWindow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Editor/pg_Preferences.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Editor/pg_Preferences.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Editor/pg_ToggleContent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Editor/pg_ToggleContent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_Button_Hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_Button_Hover.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_Button_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_Button_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_AngleVis_Off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_AngleVis_Off.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_AngleVis_On.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_AngleVis_On.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_Divider.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_Divider.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PGrid_3D_Off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PGrid_3D_Off.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PGrid_3D_On.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PGrid_3D_On.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PGrid_Lock_Off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PGrid_Lock_Off.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PGrid_Lock_On.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PGrid_Lock_On.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PGrid_X_Off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PGrid_X_Off.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PGrid_X_On.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PGrid_X_On.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PGrid_Y_Off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PGrid_Y_Off.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PGrid_Y_On.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PGrid_Y_On.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PGrid_Z_Off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PGrid_Z_Off.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PGrid_Z_On.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PGrid_Z_On.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PushToGrid_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PushToGrid_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PushToGrid_Pressed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_PushToGrid_Pressed.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_Snap_Off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_Snap_Off.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_Snap_On.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_Snap_On.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_Vis_Off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_Vis_Off.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_Vis_On.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_GUI_Vis_On.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_MenuExtendo_Close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_MenuExtendo_Close.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_MenuExtendo_Open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/GUI/ProGridsToggles/ProGrids2_MenuExtendo_Open.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/MonoBehaviour.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/MonoBehaviour/pg_IgnoreSnap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/MonoBehaviour/pg_IgnoreSnap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/ProGrids_Documentation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/ProGrids_Documentation.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Shader/pg_GridShader.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProGrids/Shader/pg_GridShader.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MeshController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MeshController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/playerControlScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playerControlScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/phone input test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/phone input test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,17 +134,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/SceneSwitchScript.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state>
+              <caret column="25" selection-start-column="25" selection-end-column="25" />
               <folding>
-                <marker date="1557313755646" expanded="true" signature="6:113" ph="..." />
-                <marker date="1557313755646" expanded="true" signature="162:704" ph="{...}" />
-                <marker date="1557313755646" expanded="true" signature="235:430" ph="{...}" />
-                <marker date="1557313755646" expanded="true" signature="271:363" ph="{...}" />
-                <marker date="1557313755646" expanded="true" signature="376:423" ph="{...}" />
-                <marker date="1557313755646" expanded="true" signature="500:521" ph="{...}" />
-                <marker date="1557313755646" expanded="true" signature="579:600" ph="{...}" />
-                <marker date="1557313755646" expanded="true" signature="647:702" ph="{...}" />
+                <marker date="1557388665469" expanded="true" signature="6:113" ph="..." />
+                <marker date="1557388665469" expanded="true" signature="161:703" ph="{...}" />
+                <marker date="1557388665469" expanded="true" signature="234:429" ph="{...}" />
+                <marker date="1557388665469" expanded="true" signature="270:362" ph="{...}" />
+                <marker date="1557388665469" expanded="true" signature="375:422" ph="{...}" />
+                <marker date="1557388665469" expanded="true" signature="499:520" ph="{...}" />
+                <marker date="1557388665469" expanded="true" signature="578:599" ph="{...}" />
+                <marker date="1557388665469" expanded="true" signature="646:701" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -35,7 +153,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Erazer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="-150">
               <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
               <folding>
                 <marker date="1557322395967" expanded="false" signature="6:78" ph="..." />
@@ -47,11 +165,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GridMaker.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="44" lean-forward="true" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+            <state relative-caret-position="-180">
+              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
               <folding>
                 <marker date="1557350450805" expanded="true" signature="6:92" ph="..." />
                 <marker date="1557350450805" expanded="true" signature="132:908" ph="{...}" />
@@ -66,30 +184,41 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/grid2.cs">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/playerControlScript.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="560">
+              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
               <folding>
-                <marker date="1557324138637" expanded="true" signature="6:78" ph="..." />
-                <marker date="1557324138637" expanded="true" signature="114:288" ph="{...}" />
-                <marker date="1557324138637" expanded="true" signature="186:207" ph="{...}" />
-                <marker date="1557324138637" expanded="true" signature="265:286" ph="{...}" />
+                <marker date="1557820707705" expanded="true" signature="6:138" ph="..." />
+                <marker date="1557820707705" expanded="true" signature="188:2646" ph="{...}" />
+                <marker date="1557820707705" expanded="true" signature="322:518" ph="{...}" />
+                <marker date="1557820707705" expanded="true" signature="337:512" ph="/* width = (float)Screen.width / 2.0f; ... */" />
+                <marker date="1557820707705" expanded="true" signature="536:844" ph="{...}" />
+                <marker date="1557820707705" expanded="true" signature="551:838" ph="/* Compute a fontSize based on the size of the screen width. ... */" />
+                <marker date="1557820707705" expanded="true" signature="863:2644" ph="{...}" />
+                <marker date="1557820707705" expanded="true" signature="925:1440" ph="{...}" />
+                <marker date="1557820707705" expanded="true" signature="996:1430" ph="{...}" />
+                <marker date="1557820707705" expanded="true" signature="1325:1416" ph="{...}" />
+                <marker date="1557820707705" expanded="true" signature="1344:1398" ph="/* hit.collider.GetComponent&lt;&gt;() ... */" />
+                <marker date="1557820707705" expanded="true" signature="1463:2083" ph="/* Handle screen touches. ... */" />
+                <marker date="1557820707705" expanded="true" signature="2111:2637" ph="/* for (int i = 0; i &lt; Input.touchCount; ++i) ... */" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MeshController.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/GridSpawner.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="68" column="51" lean-forward="true" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
+            <state relative-caret-position="-195">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
               <folding>
-                <marker date="1557350034080" expanded="true" signature="6:78" ph="..." />
-                <marker date="1557350034080" expanded="true" signature="205:2175" ph="{...}" />
-                <marker date="1557350034080" expanded="true" signature="213:2173" ph="/* public Material mat; ... */" />
+                <marker date="1557492963216" expanded="false" signature="6:78" ph="..." />
+                <marker date="1557492963216" expanded="true" signature="120:663" ph="{...}" />
+                <marker date="1557492963216" expanded="true" signature="255:661" ph="{...}" />
+                <marker date="1557492963216" expanded="true" signature="309:655" ph="{...}" />
+                <marker date="1557492963216" expanded="true" signature="371:645" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -106,16 +235,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/grid2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface-Mobile.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SceneSwitchScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/playerControlScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMPro_Properties.cginc" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMPro.cginc" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Erazer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MeshController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GridMaker.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ProCore/ProGrids/Editor/pg_Editor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GridSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF.shader" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -123,11 +250,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Dummy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SceneSwitchScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Erazer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/grid2.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MeshController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GridMaker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SceneSwitchScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/GridSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/playerControlScript.cs" />
       </list>
     </option>
   </component>
@@ -148,15 +277,15 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AssemblyExplorer" />
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
-      <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -216,11 +345,15 @@
       <workItem from="1557310894126" duration="5163000" />
       <workItem from="1557321523379" duration="4402000" />
       <workItem from="1557349980045" duration="648000" />
+      <workItem from="1557388103747" duration="1964000" />
+      <workItem from="1557486842467" duration="10626000" />
+      <workItem from="1557742304587" duration="1006000" />
+      <workItem from="1557818680632" duration="2026000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14678000" />
+    <option name="totallyTimeSpent" value="30300000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -233,8 +366,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2457356" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -251,7 +385,7 @@
       <window_info anchor="bottom" id="Performance Profiler" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Unity" order="11" sideWeight="0.49840087" weight="0.32936078" />
+      <window_info anchor="bottom" id="Unity" order="11" sideWeight="0.49840087" weight="0.3283582" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Unit Tests" order="13" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49946696" weight="0.32936078" />
@@ -338,47 +472,31 @@
     <entry file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMPro_Properties.cginc">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Dummy.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#78#0" expanded="true" />
-            <marker date="1555580308414" expanded="true" signature="114:402" ph="{...}" />
-            <marker date="1555580308414" expanded="true" signature="186:207" ph="{...}" />
-            <marker date="1555580308414" expanded="true" signature="265:319" ph="{...}" />
-            <marker date="1555580308414" expanded="true" signature="354:400" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/ProCore/ProGrids/Editor/pg_Editor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="533" selection-start-line="533" selection-end-line="533" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Dummy.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/grid2.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/ProCore/ProGrids/Editor/pg_Editor.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MeshController.cs" />
+    <entry file="file://$USER_HOME$/AppData/Local/Packages/microsoft.windowscommunicationsapps_8wekyb3d8bbwe/LocalState/Files/S0/1243/Attachments/MeshCreator[2372].cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/SceneSwitchScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state>
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
           <folding>
-            <marker date="1557313755646" expanded="true" signature="6:113" ph="..." />
-            <marker date="1557313755646" expanded="true" signature="162:704" ph="{...}" />
-            <marker date="1557313755646" expanded="true" signature="235:430" ph="{...}" />
-            <marker date="1557313755646" expanded="true" signature="271:363" ph="{...}" />
-            <marker date="1557313755646" expanded="true" signature="376:423" ph="{...}" />
-            <marker date="1557313755646" expanded="true" signature="500:521" ph="{...}" />
-            <marker date="1557313755646" expanded="true" signature="579:600" ph="{...}" />
-            <marker date="1557313755646" expanded="true" signature="647:702" ph="{...}" />
+            <marker date="1557388665469" expanded="true" signature="6:113" ph="..." />
+            <marker date="1557388665469" expanded="true" signature="161:703" ph="{...}" />
+            <marker date="1557388665469" expanded="true" signature="234:429" ph="{...}" />
+            <marker date="1557388665469" expanded="true" signature="270:362" ph="{...}" />
+            <marker date="1557388665469" expanded="true" signature="375:422" ph="{...}" />
+            <marker date="1557388665469" expanded="true" signature="499:520" ph="{...}" />
+            <marker date="1557388665469" expanded="true" signature="578:599" ph="{...}" />
+            <marker date="1557388665469" expanded="true" signature="646:701" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Erazer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="-150">
           <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
           <folding>
             <marker date="1557322395967" expanded="false" signature="6:78" ph="..." />
@@ -389,35 +507,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/grid2.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <marker date="1557324138637" expanded="true" signature="6:78" ph="..." />
-            <marker date="1557324138637" expanded="true" signature="114:288" ph="{...}" />
-            <marker date="1557324138637" expanded="true" signature="186:207" ph="{...}" />
-            <marker date="1557324138637" expanded="true" signature="265:286" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MeshController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="68" column="51" lean-forward="true" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
-          <folding>
-            <marker date="1557350034080" expanded="true" signature="6:78" ph="..." />
-            <marker date="1557350034080" expanded="true" signature="205:2175" ph="{...}" />
-            <marker date="1557350034080" expanded="true" signature="213:2173" ph="/* public Material mat; ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GridMaker.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="44" lean-forward="true" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        <state relative-caret-position="-180">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding>
             <marker date="1557350450805" expanded="true" signature="6:92" ph="..." />
             <marker date="1557350450805" expanded="true" signature="132:908" ph="{...}" />
@@ -427,6 +520,42 @@
             <marker date="1557350450805" expanded="true" signature="585:898" ph="{...}" />
             <marker date="1557350450805" expanded="true" signature="643:886" ph="{...}" />
             <marker date="1557350450805" expanded="true" signature="708:872" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/GridSpawner.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-195">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding>
+            <marker date="1557492963216" expanded="false" signature="6:78" ph="..." />
+            <marker date="1557492963216" expanded="true" signature="120:663" ph="{...}" />
+            <marker date="1557492963216" expanded="true" signature="255:661" ph="{...}" />
+            <marker date="1557492963216" expanded="true" signature="309:655" ph="{...}" />
+            <marker date="1557492963216" expanded="true" signature="371:645" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/playerControlScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <marker date="1557820707705" expanded="true" signature="6:138" ph="..." />
+            <marker date="1557820707705" expanded="true" signature="188:2646" ph="{...}" />
+            <marker date="1557820707705" expanded="true" signature="322:518" ph="{...}" />
+            <marker date="1557820707705" expanded="true" signature="337:512" ph="/* width = (float)Screen.width / 2.0f; ... */" />
+            <marker date="1557820707705" expanded="true" signature="536:844" ph="{...}" />
+            <marker date="1557820707705" expanded="true" signature="551:838" ph="/* Compute a fontSize based on the size of the screen width. ... */" />
+            <marker date="1557820707705" expanded="true" signature="863:2644" ph="{...}" />
+            <marker date="1557820707705" expanded="true" signature="925:1440" ph="{...}" />
+            <marker date="1557820707705" expanded="true" signature="996:1430" ph="{...}" />
+            <marker date="1557820707705" expanded="true" signature="1325:1416" ph="{...}" />
+            <marker date="1557820707705" expanded="true" signature="1344:1398" ph="/* hit.collider.GetComponent&lt;&gt;() ... */" />
+            <marker date="1557820707705" expanded="true" signature="1463:2083" ph="/* Handle screen touches. ... */" />
+            <marker date="1557820707705" expanded="true" signature="2111:2637" ph="/* for (int i = 0; i &lt; Input.touchCount; ++i) ... */" />
           </folding>
         </state>
       </provider>
