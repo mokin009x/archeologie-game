@@ -11,6 +11,7 @@ public class playerControlScript : MonoBehaviour
     private float width;
     private float height;
     public GameObject particle;
+    public GameObject dragParticle;
 
 
     void Awake()
@@ -54,6 +55,21 @@ public class playerControlScript : MonoBehaviour
 
                     }*/
                     hit.collider.GetComponent<SmashPoint>().DestroyThisObject();
+                }
+
+                
+            }
+            if (Input.GetTouch(i).phase == TouchPhase.Moved)
+            {
+                // Construct a ray from the current touch coordinates
+                Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
+                RaycastHit hit;
+                
+
+                // Create a particle if hit
+                if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+                {
+                    Instantiate(dragParticle, hit.point, Quaternion.identity);
                 }
 
                 

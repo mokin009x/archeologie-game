@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64a96eef-bb92-4bbb-9069-fd2e133f237f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Andriod build test/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Andriod build test/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Andriod build test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Andriod build test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StoneLayer Pivot V2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StoneLayer Pivot V2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Kars Testing Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Kars Testing Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SmashPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SmashPoint.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/playerControlScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playerControlScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/materials.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,20 +73,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/playerControlScript.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+            <state relative-caret-position="672">
+              <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
               <folding>
-                <marker date="1557825730553" expanded="true" signature="6:138" ph="..." />
-                <marker date="1557825730553" expanded="true" signature="188:2882" ph="{...}" />
-                <marker date="1557825730553" expanded="true" signature="322:514" ph="{...}" />
-                <marker date="1557825730553" expanded="true" signature="532:836" ph="{...}" />
-                <marker date="1557825730553" expanded="true" signature="855:2880" ph="{...}" />
-                <marker date="1557825730553" expanded="true" signature="917:1676" ph="{...}" />
-                <marker date="1557825730553" expanded="true" signature="988:1666" ph="{...}" />
-                <marker date="1557825730553" expanded="true" signature="1317:1634" ph="{...}" />
-                <marker date="1557825730553" expanded="true" signature="1432:1535" ph="/* if (hit.collider.gameObject.CompareTag(&quot;Smash Point&quot;)) ... */" />
-                <marker date="1557825730553" expanded="true" signature="1699:2319" ph="/* Handle screen touches. ... */" />
-                <marker date="1557825730553" expanded="true" signature="2347:2873" ph="/* for (int i = 0; i &lt; Input.touchCount; ++i) ... */" />
+                <marker date="1557826405778" expanded="true" signature="6:138" ph="..." />
+                <marker date="1557826405778" expanded="true" signature="188:3455" ph="{...}" />
+                <marker date="1557826405778" expanded="true" signature="358:550" ph="{...}" />
+                <marker date="1557826405778" expanded="true" signature="568:872" ph="{...}" />
+                <marker date="1557826405778" expanded="true" signature="891:3453" ph="{...}" />
+                <marker date="1557826405778" expanded="true" signature="953:2249" ph="{...}" />
+                <marker date="1557826405778" expanded="true" signature="1024:1702" ph="{...}" />
+                <marker date="1557826405778" expanded="true" signature="1353:1670" ph="{...}" />
+                <marker date="1557826405778" expanded="true" signature="1468:1571" ph="/* if (hit.collider.gameObject.CompareTag(&quot;Smash Point&quot;)) ... */" />
+                <marker date="1557826405778" expanded="true" signature="1763:2239" ph="{...}" />
+                <marker date="1557826405778" expanded="true" signature="2092:2207" ph="{...}" />
+                <marker date="1557826405778" expanded="true" signature="2272:2892" ph="/* Handle screen touches. ... */" />
+                <marker date="1557826405778" expanded="true" signature="2920:3446" ph="/* for (int i = 0; i &lt; Input.touchCount; ++i) ... */" />
               </folding>
             </state>
           </provider>
@@ -155,7 +152,7 @@
       <facet id="riderModule/invalid/Default Android Facet" />
     </ignored-facets>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-29" />
     <option name="width" value="1936" />
@@ -238,12 +235,12 @@
       <workItem from="1557388103747" duration="1964000" />
       <workItem from="1557486842467" duration="10626000" />
       <workItem from="1557742304587" duration="1006000" />
-      <workItem from="1557818680632" duration="5866000" />
+      <workItem from="1557818680632" duration="6882000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34140000" />
+    <option name="totallyTimeSpent" value="35156000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -437,20 +434,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/playerControlScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+        <state relative-caret-position="672">
+          <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
           <folding>
-            <marker date="1557825730553" expanded="true" signature="6:138" ph="..." />
-            <marker date="1557825730553" expanded="true" signature="188:2882" ph="{...}" />
-            <marker date="1557825730553" expanded="true" signature="322:514" ph="{...}" />
-            <marker date="1557825730553" expanded="true" signature="532:836" ph="{...}" />
-            <marker date="1557825730553" expanded="true" signature="855:2880" ph="{...}" />
-            <marker date="1557825730553" expanded="true" signature="917:1676" ph="{...}" />
-            <marker date="1557825730553" expanded="true" signature="988:1666" ph="{...}" />
-            <marker date="1557825730553" expanded="true" signature="1317:1634" ph="{...}" />
-            <marker date="1557825730553" expanded="true" signature="1432:1535" ph="/* if (hit.collider.gameObject.CompareTag(&quot;Smash Point&quot;)) ... */" />
-            <marker date="1557825730553" expanded="true" signature="1699:2319" ph="/* Handle screen touches. ... */" />
-            <marker date="1557825730553" expanded="true" signature="2347:2873" ph="/* for (int i = 0; i &lt; Input.touchCount; ++i) ... */" />
+            <marker date="1557826405778" expanded="true" signature="6:138" ph="..." />
+            <marker date="1557826405778" expanded="true" signature="188:3455" ph="{...}" />
+            <marker date="1557826405778" expanded="true" signature="358:550" ph="{...}" />
+            <marker date="1557826405778" expanded="true" signature="568:872" ph="{...}" />
+            <marker date="1557826405778" expanded="true" signature="891:3453" ph="{...}" />
+            <marker date="1557826405778" expanded="true" signature="953:2249" ph="{...}" />
+            <marker date="1557826405778" expanded="true" signature="1024:1702" ph="{...}" />
+            <marker date="1557826405778" expanded="true" signature="1353:1670" ph="{...}" />
+            <marker date="1557826405778" expanded="true" signature="1468:1571" ph="/* if (hit.collider.gameObject.CompareTag(&quot;Smash Point&quot;)) ... */" />
+            <marker date="1557826405778" expanded="true" signature="1763:2239" ph="{...}" />
+            <marker date="1557826405778" expanded="true" signature="2092:2207" ph="{...}" />
+            <marker date="1557826405778" expanded="true" signature="2272:2892" ph="/* Handle screen touches. ... */" />
+            <marker date="1557826405778" expanded="true" signature="2920:3446" ph="/* for (int i = 0; i &lt; Input.touchCount; ++i) ... */" />
           </folding>
         </state>
       </provider>
