@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Resolution: 50
-  blockPrefab: {fileID: 6381456441251607947, guid: c8a178b1233969140b843cdc514f208d,
+  blockPrefab: {fileID: 7055954476310579328, guid: 7f7276ad96b52dc419ecaf3ae90ad5ce,
     type: 3}

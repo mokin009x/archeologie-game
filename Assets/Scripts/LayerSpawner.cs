@@ -12,7 +12,7 @@ public class LayerSpawner : MonoBehaviour
         for (int i = 0; i < holeDepth; i++)
         {
             GameObject tempLayer = Instantiate(layers[Random.Range(0, layers.Length)]);
-            tempLayer.transform.localPosition = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y+ i*0.5f, gameObject.transform.position.z);
+            tempLayer.transform.localPosition = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y- i*1.5f, gameObject.transform.position.z);
         }  
     }
 
