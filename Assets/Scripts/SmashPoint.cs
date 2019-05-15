@@ -5,7 +5,7 @@ using UnityEngine;
 public class SmashPoint : MonoBehaviour
 {
     public GameObject stoneLayer;
-    public int damage;
+    int damage;
     // Start is called before the first frame update
     void Start()
     {
