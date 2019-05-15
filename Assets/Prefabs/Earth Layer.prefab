@@ -43,6 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77e030e2d07664248b156b3a6edb661c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Resolution: 50
+  Resolution: 46
   blockPrefab: {fileID: 7055954476310579328, guid: 7f7276ad96b52dc419ecaf3ae90ad5ce,
     type: 3}
