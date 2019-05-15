@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Diagnostics.Tracing;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,6 +15,13 @@ public class playerControlScript : MonoBehaviour
     public GameObject dragParticle;
     public RaycastHit dragHit;
 
+
+    private void Start()
+    {
+        
+    }
+
+   
 
     void Awake()
     {
@@ -36,30 +44,9 @@ public class playerControlScript : MonoBehaviour
 
     void Update()
     {
-    
-        for (int i = 0; i < Input.touchCount; ++i)
+
+        for (int i = 0; i < Input.touchCount; i++)
         {
-            if (Input.GetTouch(i).phase == TouchPhase.Began)
-            {
-                // Construct a ray from the current touch coordinates
-                Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
-                RaycastHit hit;
-                
-
-                // Create a particle if hit
-                if (Physics.Raycast(ray, out hit, Mathf.Infinity))
-                {
-                    Instantiate(particle, hit.point, Quaternion.identity);
-
-                    /*if (hit.collider.gameObject.CompareTag("Smash Point"))
-                    {
-
-                    }*/
-                    hit.collider.GetComponent<SmashPoint>().DestroyThisObject();
-                }
-
-                
-            }
             if (Input.GetTouch(i).phase == TouchPhase.Moved)
             {
                 // Construct a ray from the current touch coordinates
@@ -77,7 +64,31 @@ public class playerControlScript : MonoBehaviour
                 }
             }
             
+            if (Input.GetTouch(i).phase == TouchPhase.Began)
+            {
+                // Construct a ray from the current touch coordinates
+                Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
+                RaycastHit hit;
+                
+
+                // Create a particle if hit
+                if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+                {
+                    Instantiate(particle, hit.point, Quaternion.identity);
+
+                    /*if (hit.collider.gameObject.CompareTag("Smash Point"))
+                    {
+    
+                    }*/
+                    hit.collider.GetComponent<SmashPoint>().DestroyThisObject();
+                }
+
+                
+            } 
         }
+           
+           
+        
     
 
        
