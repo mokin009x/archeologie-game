@@ -29,7 +29,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 87
   m_IsActive: 1
 --- !u!4 &4828958588300721933
 Transform:
@@ -80,6 +80,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766260090187621250, guid: e87a4040c9b6d1f4c9ad0226a9e8aafa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 87
       objectReference: {fileID: 0}
     - target: {fileID: 2766260090187621253, guid: e87a4040c9b6d1f4c9ad0226a9e8aafa,
         type: 3}
@@ -136,6 +141,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5309431355759749437, guid: e87a4040c9b6d1f4c9ad0226a9e8aafa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 87
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e87a4040c9b6d1f4c9ad0226a9e8aafa, type: 3}
 --- !u!4 &945111220 stripped
@@ -155,6 +165,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone Layer
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 96abd8b7012a30546b25d2bece322020,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 87
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 96abd8b7012a30546b25d2bece322020,
         type: 3}
