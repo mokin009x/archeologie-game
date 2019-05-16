@@ -49,7 +49,6 @@ public class playerControlScript : MonoBehaviour
                 // Create a particle if hit
                 if (Physics.Raycast(ray, out hit, Mathf.Infinity))
                 {
-                    Instantiate(particle, hit.point, Quaternion.identity);
 
                     /*if (hit.collider.gameObject.CompareTag("Smash Point"))
                     {

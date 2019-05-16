@@ -16,7 +16,7 @@ public class StoneLayer : MonoBehaviour
         for (int i = 0; i < smashPoints.Length; i++)
         {
             GameObject newSmashpoint = Instantiate(smashPointPrefab,transform.position,Quaternion.identity, gameObject.transform);
-            newSmashpoint.transform.localPosition = new Vector3(Random.Range(0, 40), 0.25f, Random.Range(0, 40));
+            newSmashpoint.transform.localPosition = new Vector3(Random.Range(0, 23f), 0.4f, Random.Range(0, 23f));
             smashPoints[i] = newSmashpoint;
             
         }
