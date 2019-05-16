@@ -6,11 +6,9 @@ public class SmashPoint : MonoBehaviour
 {
     public GameObject stoneLayer;
 
-    private bool FirstTime;
     // Start is called before the first frame update
     void Start()
     {
-        FirstTime = true;
         stoneLayer = gameObject.transform.parent.gameObject;
     }
     public void DestroyThisObject()
@@ -24,12 +22,11 @@ public class SmashPoint : MonoBehaviour
             
                 Destroy(stoneLayer);
             }
+            else
+            {
+                transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
+            }
 
-            FirstTime = false;
             Destroy(this);
-
-        
-        
-
     }
 }
