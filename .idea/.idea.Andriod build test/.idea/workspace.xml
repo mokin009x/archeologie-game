@@ -4,7 +4,20 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64a96eef-bb92-4bbb-9069-fd2e133f237f" name="Default Changelist" comment="" />
+    <list default="true" id="64a96eef-bb92-4bbb-9069-fd2e133f237f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Dirt Brown.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Dirt Brown.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Earth Layer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Earth Layer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Smash Point.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Smash Point.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StoneLayer Pivot V2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StoneLayer Pivot V2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Kars Testing Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Kars Testing Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Kars Testing Scene/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Kars Testing Scene/LightingData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Kars Testing Scene/LightingData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Kars Testing Scene/LightingData.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Kars Testing Scene/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Kars Testing Scene/ReflectionProbe-0.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Kars Testing Scene/ReflectionProbe-0.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Kars Testing Scene/ReflectionProbe-0.exr.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SmashPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SmashPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StoneLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StoneLayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/playerControlScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playerControlScript.cs" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +48,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Erazer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-180">
+            <state>
               <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
               <folding>
                 <marker date="1557322395967" expanded="false" signature="6:78" ph="..." />
@@ -50,7 +63,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GridMaker.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-180">
+            <state relative-caret-position="75">
               <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
               <folding>
                 <marker date="1557350450805" expanded="true" signature="6:92" ph="..." />
@@ -66,41 +79,56 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/playerControlScript.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="69" column="43" lean-forward="true" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
+            <state relative-caret-position="524">
+              <caret line="73" column="53" lean-forward="true" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="53" />
               <folding>
-                <marker date="1557828389512" expanded="true" signature="6:138" ph="..." />
-                <marker date="1557828389512" expanded="true" signature="188:3515" ph="{...}" />
-                <marker date="1557828389512" expanded="true" signature="389:581" ph="{...}" />
-                <marker date="1557828389512" expanded="true" signature="599:903" ph="{...}" />
-                <marker date="1557828389512" expanded="true" signature="922:3513" ph="{...}" />
-                <marker date="1557828389512" expanded="true" signature="984:2309" ph="{...}" />
-                <marker date="1557828389512" expanded="true" signature="1055:1733" ph="{...}" />
-                <marker date="1557828389512" expanded="true" signature="1384:1701" ph="{...}" />
-                <marker date="1557828389512" expanded="true" signature="1499:1602" ph="/* if (hit.collider.gameObject.CompareTag(&quot;Smash Point&quot;)) ... */" />
-                <marker date="1557828389512" expanded="true" signature="1794:2286" ph="{...}" />
-                <marker date="1557828389512" expanded="true" signature="2179:2272" ph="{...}" />
-                <marker date="1557828389512" expanded="true" signature="2332:2952" ph="/* Handle screen touches. ... */" />
-                <marker date="1557828389512" expanded="true" signature="2980:3506" ph="/* for (int i = 0; i &lt; Input.touchCount; ++i) ... */" />
+                <marker date="1557927469721" expanded="false" signature="6:138" ph="..." />
+                <marker date="1557927469721" expanded="true" signature="188:3440" ph="{...}" />
+                <marker date="1557927469721" expanded="true" signature="389:581" ph="{...}" />
+                <marker date="1557927469721" expanded="true" signature="599:903" ph="{...}" />
+                <marker date="1557927469721" expanded="true" signature="922:3438" ph="{...}" />
+                <marker date="1557927469721" expanded="true" signature="984:2234" ph="{...}" />
+                <marker date="1557927469721" expanded="true" signature="1055:1658" ph="{...}" />
+                <marker date="1557927469721" expanded="true" signature="1384:1626" ph="{...}" />
+                <marker date="1557927469721" expanded="true" signature="1424:1527" ph="/* if (hit.collider.gameObject.CompareTag(&quot;Smash Point&quot;)) ... */" />
+                <marker date="1557927469721" expanded="true" signature="1719:2211" ph="{...}" />
+                <marker date="1557927469721" expanded="true" signature="2104:2197" ph="{...}" />
+                <marker date="1557927469721" expanded="true" signature="2257:2877" ph="/* Handle screen touches. ... */" />
+                <marker date="1557927469721" expanded="true" signature="2905:3431" ph="/* for (int i = 0; i &lt; Input.touchCount; ++i) ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/SmashPoint.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+              <folding>
+                <marker date="1557930082497" expanded="false" signature="6:78" ph="..." />
+                <marker date="1557930082497" expanded="true" signature="119:764" ph="{...}" />
+                <marker date="1557930082497" expanded="true" signature="254:353" ph="{...}" />
+                <marker date="1557930082497" expanded="true" signature="389:762" ph="{...}" />
+                <marker date="1557930082497" expanded="true" signature="599:677" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/SmashPoint.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/StoneLayer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+            <state relative-caret-position="150">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
               <folding>
-                <marker date="1557822231710" expanded="false" signature="6:78" ph="..." />
-                <marker date="1557822231710" expanded="true" signature="119:568" ph="{...}" />
-                <marker date="1557822231710" expanded="true" signature="241:314" ph="{...}" />
-                <marker date="1557822231710" expanded="true" signature="350:566" ph="{...}" />
-                <marker date="1557822231710" expanded="true" signature="483:536" ph="{...}" />
+                <marker date="1557929792440" expanded="false" signature="6:78" ph="..." />
+                <marker date="1557929792440" expanded="true" signature="119:770" ph="{...}" />
+                <marker date="1557929792440" expanded="true" signature="283:768" ph="{...}" />
+                <marker date="1557929792440" expanded="true" signature="439:762" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -117,16 +145,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface-Mobile.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoneLayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SmashPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SceneSwitchScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface-Mobile.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/playerControlScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMPro_Properties.cginc" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMPro.cginc" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Erazer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GridMaker.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SmashPoint.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -138,8 +167,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GridMaker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SceneSwitchScript.cs" />
         <option value="$PROJECT_DIR$/Assets/GridSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SmashPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/playerControlScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StoneLayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SmashPoint.cs" />
       </list>
     </option>
   </component>
@@ -160,15 +190,15 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
       <pane id="UnityExplorer">
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
-      <pane id="AssemblyExplorer" />
-      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -232,11 +262,12 @@
       <workItem from="1557486842467" duration="10626000" />
       <workItem from="1557742304587" duration="1006000" />
       <workItem from="1557818680632" duration="9125000" />
+      <workItem from="1557926665279" duration="3867000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37399000" />
+    <option name="totallyTimeSpent" value="41266000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -359,6 +390,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/ProCore/ProGrids/Editor/pg_Editor.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MeshController.cs" />
     <entry file="file://$USER_HOME$/AppData/Local/Packages/microsoft.windowscommunicationsapps_8wekyb3d8bbwe/LocalState/Files/S0/1243/Attachments/MeshCreator[2372].cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/GridSpawner.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/SceneSwitchScript.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -378,7 +410,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Erazer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
+        <state>
           <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
           <folding>
             <marker date="1557322395967" expanded="false" signature="6:78" ph="..." />
@@ -391,7 +423,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GridMaker.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
+        <state relative-caret-position="75">
           <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding>
             <marker date="1557350450805" expanded="true" signature="6:92" ph="..." />
@@ -406,45 +438,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/GridSpawner.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/playerControlScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-195">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        <state relative-caret-position="524">
+          <caret line="73" column="53" lean-forward="true" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="53" />
+          <folding>
+            <marker date="1557927469721" expanded="false" signature="6:138" ph="..." />
+            <marker date="1557927469721" expanded="true" signature="188:3440" ph="{...}" />
+            <marker date="1557927469721" expanded="true" signature="389:581" ph="{...}" />
+            <marker date="1557927469721" expanded="true" signature="599:903" ph="{...}" />
+            <marker date="1557927469721" expanded="true" signature="922:3438" ph="{...}" />
+            <marker date="1557927469721" expanded="true" signature="984:2234" ph="{...}" />
+            <marker date="1557927469721" expanded="true" signature="1055:1658" ph="{...}" />
+            <marker date="1557927469721" expanded="true" signature="1384:1626" ph="{...}" />
+            <marker date="1557927469721" expanded="true" signature="1424:1527" ph="/* if (hit.collider.gameObject.CompareTag(&quot;Smash Point&quot;)) ... */" />
+            <marker date="1557927469721" expanded="true" signature="1719:2211" ph="{...}" />
+            <marker date="1557927469721" expanded="true" signature="2104:2197" ph="{...}" />
+            <marker date="1557927469721" expanded="true" signature="2257:2877" ph="/* Handle screen touches. ... */" />
+            <marker date="1557927469721" expanded="true" signature="2905:3431" ph="/* for (int i = 0; i &lt; Input.touchCount; ++i) ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StoneLayer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <marker date="1557929792440" expanded="false" signature="6:78" ph="..." />
+            <marker date="1557929792440" expanded="true" signature="119:770" ph="{...}" />
+            <marker date="1557929792440" expanded="true" signature="283:768" ph="{...}" />
+            <marker date="1557929792440" expanded="true" signature="439:762" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/SmashPoint.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        <state relative-caret-position="435">
+          <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
           <folding>
-            <marker date="1557822231710" expanded="false" signature="6:78" ph="..." />
-            <marker date="1557822231710" expanded="true" signature="119:568" ph="{...}" />
-            <marker date="1557822231710" expanded="true" signature="241:314" ph="{...}" />
-            <marker date="1557822231710" expanded="true" signature="350:566" ph="{...}" />
-            <marker date="1557822231710" expanded="true" signature="483:536" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/playerControlScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="69" column="43" lean-forward="true" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
-          <folding>
-            <marker date="1557828389512" expanded="true" signature="6:138" ph="..." />
-            <marker date="1557828389512" expanded="true" signature="188:3515" ph="{...}" />
-            <marker date="1557828389512" expanded="true" signature="389:581" ph="{...}" />
-            <marker date="1557828389512" expanded="true" signature="599:903" ph="{...}" />
-            <marker date="1557828389512" expanded="true" signature="922:3513" ph="{...}" />
-            <marker date="1557828389512" expanded="true" signature="984:2309" ph="{...}" />
-            <marker date="1557828389512" expanded="true" signature="1055:1733" ph="{...}" />
-            <marker date="1557828389512" expanded="true" signature="1384:1701" ph="{...}" />
-            <marker date="1557828389512" expanded="true" signature="1499:1602" ph="/* if (hit.collider.gameObject.CompareTag(&quot;Smash Point&quot;)) ... */" />
-            <marker date="1557828389512" expanded="true" signature="1794:2286" ph="{...}" />
-            <marker date="1557828389512" expanded="true" signature="2179:2272" ph="{...}" />
-            <marker date="1557828389512" expanded="true" signature="2332:2952" ph="/* Handle screen touches. ... */" />
-            <marker date="1557828389512" expanded="true" signature="2980:3506" ph="/* for (int i = 0; i &lt; Input.touchCount; ++i) ... */" />
+            <marker date="1557930082497" expanded="false" signature="6:78" ph="..." />
+            <marker date="1557930082497" expanded="true" signature="119:764" ph="{...}" />
+            <marker date="1557930082497" expanded="true" signature="254:353" ph="{...}" />
+            <marker date="1557930082497" expanded="true" signature="389:762" ph="{...}" />
+            <marker date="1557930082497" expanded="true" signature="599:677" ph="{...}" />
           </folding>
         </state>
       </provider>
