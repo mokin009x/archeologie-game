@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 19fd01cb701fdb149a782ab4407b3976
+guid: 4954e25a59f9e604996bfe7062881edb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3204823130194121341
-    second: Bling-animation-sprite-sheet_0
+      213: -7231921981844672589
+    second: Bling-animation-Spire-sheet-versie-3_0
   - first:
-      213: 1594057010077567511
-    second: Bling-animation-sprite-sheet_1
+      213: 5997073156992815520
+    second: Bling-animation-Spire-sheet-versie-3_1
   - first:
-      213: 2781522697294537055
-    second: Bling-animation-sprite-sheet_2
+      213: 6265813186129791551
+    second: Bling-animation-Spire-sheet-versie-3_2
+  - first:
+      213: -4678969334082125550
+    second: Bling-animation-Spire-sheet-versie-3_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -52,10 +55,10 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
+  alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 281, y: 0, z: 0, w: 188}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -104,64 +107,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bling-animation-sprite-sheet_0
+      name: Bling-animation-Spire-sheet-versie-3_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 504
-        height: 659
+        x: 16
+        y: 12
+        width: 584
+        height: 647
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24c18f54beeaaa143a76de966f70d8ec
-      internalID: 3204823130194121341
+      spriteID: e995e425372b0e9499e4e995c61da904
+      internalID: -7231921981844672589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bling-animation-sprite-sheet_1
+      name: Bling-animation-Spire-sheet-versie-3_1
       rect:
         serializedVersion: 2
-        x: 504
-        y: 0
-        width: 504
-        height: 659
+        x: 851
+        y: 106
+        width: 414
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de3e3c64825c9db4d8ecbd0ff2a684a2
-      internalID: 1594057010077567511
+      spriteID: 7e7df18e7a9c511489419adcbc168134
+      internalID: 5997073156992815520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bling-animation-sprite-sheet_2
+      name: Bling-animation-Spire-sheet-versie-3_2
       rect:
         serializedVersion: 2
-        x: 1008
-        y: 0
-        width: 504
-        height: 659
+        x: 1587
+        y: 232
+        width: 250
+        height: 172
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cc0e7675e1c04140ababec7d823d7b7
-      internalID: 2781522697294537055
+      spriteID: ed4d6953bec90d847a5bef2e10603eec
+      internalID: 6265813186129791551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bling-animation-Spire-sheet-versie-3_3
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac8af57128d9904da1eb1f12833df15
+      internalID: -4678969334082125550
       vertices: []
       indices: 
       edges: []
@@ -169,7 +193,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 405a7265fd62edd4bb2b4d58be6b59ed
+    spriteID: 4a2a16826564e3d4a9368a27d8937515
     internalID: 0
     vertices: []
     indices: 
