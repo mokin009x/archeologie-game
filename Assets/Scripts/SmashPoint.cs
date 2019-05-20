@@ -15,18 +15,15 @@ public class SmashPoint : MonoBehaviour
     {
         
         
-            stoneLayer.GetComponent<StoneLayer>().health = stoneLayer.GetComponent<StoneLayer>().health +- 1;
+            stoneLayer.GetComponent<StoneLayer>().health =-3;
         
-            if (stoneLayer.GetComponent<StoneLayer>().health <= 0)
+            if (stoneLayer.GetComponent<StoneLayer>().health <= 0 )
             {
             
                 Destroy(stoneLayer);
             }
-            else
-            {
-                transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
-            }
-
-            Destroy(this);
+           
+            //transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
+            Destroy(gameObject);
     }
 }
