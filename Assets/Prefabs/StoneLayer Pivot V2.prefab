@@ -59,10 +59,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  amountOfSmashPoints: 3
+  amountOfSmashPoints: 10
   smashPointPrefab: {fileID: 2766260090187621250, guid: e87a4040c9b6d1f4c9ad0226a9e8aafa,
     type: 3}
   smashPoints: []
+  canvasObj: {fileID: 0}
+  instance: {fileID: 0}
 --- !u!1001 &2766260090853679921
 PrefabInstance:
   m_ObjectHideFlags: 0
