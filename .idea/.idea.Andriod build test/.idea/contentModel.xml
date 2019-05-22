@@ -24,6 +24,7 @@
           <e p="MeshCreator.cs" t="Include" />
           <e p="playerControlScript.cs" t="Include" />
           <e p="PlayerData.cs" t="Include" />
+          <e p="SceneLoader.cs" t="Include" />
           <e p="SceneSwitchScript.cs" t="Include" />
           <e p="SmashPoint.cs" t="Include" />
           <e p="StoneLayer.cs" t="Include" />
