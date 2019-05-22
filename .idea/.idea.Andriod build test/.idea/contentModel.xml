@@ -15,6 +15,7 @@
           <e p="README.txt" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="Artifact.cs" t="Include" />
           <e p="Erazer.cs" t="Include" />
           <e p="GridMaker.cs" t="Include" />
           <e p="GridSpawner.cs" t="Include" />
