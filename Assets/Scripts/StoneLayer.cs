@@ -37,20 +37,7 @@ public class StoneLayer : MonoBehaviour
             newSmashpoint.transform.localPosition = new Vector3(Random.Range(0, 23f), 0.4f, Random.Range(0, 23f));
             smashPoints[i] = newSmashpoint;
         }
-
-        canvasObj.transform.GetComponent<TextMeshProUGUI>().text = instance.nullCount.ToString();
     }
-
-    void Update()
-    {
-        
-        
-            
-        
-        canvasObj.transform.GetComponent<TextMeshProUGUI>().text = instance.nullCount.ToString();
-
-    }
-
     public void DecreaseHP()
     {
         for (int i = 0; i < smashPoints.Length; i++)
