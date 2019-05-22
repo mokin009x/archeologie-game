@@ -5,10 +5,11 @@ using UnityEngine;
 public class Artifact : MonoBehaviour
 {
     [SerializeField]
-    bool clicked;
+    public bool clicked;
     public Transform MoveHere;
     [SerializeField]
     float speed;
+
 
     private void Start()
     {

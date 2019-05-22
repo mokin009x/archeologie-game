@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Diagnostics.Tracing;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,29 +14,25 @@ public class playerControlScript : MonoBehaviour
     public GameObject particle;
     public GameObject dragParticle;
     public RaycastHit dragHit;
+   // public GameObject hitCube;
 
 
-    void Awake()
-    {
-        width = (float)Screen.width / 2.0f;
-        height = (float)Screen.height / 2.0f;
-
-        // Position used for the cube.
-        position = new Vector3(0.0f, 0.0f, 0.0f);
+    private void Start()
+    { 
+      //  hitCube = GameObject.Find("Cube");
+//        hitCube.gameObject.SetActive(false);
     }
+
+   
 
     void OnGUI()
     {
-        // Compute a fontSize based on the size of the screen width.
-        GUI.skin.label.fontSize = (int)(Screen.width / 25.0f);
-
-        GUI.Label(new Rect(20, 20, width, height * 0.25f),
-            "x = " + position.x.ToString("f2") +
-            ", y = " + position.y.ToString("f2"));
+       
     }
 
     void Update()
     {
+        
     
         for (int i = 0; i < Input.touchCount; ++i)
         {
@@ -49,15 +46,16 @@ public class playerControlScript : MonoBehaviour
                 // Create a particle if hit
                 if (Physics.Raycast(ray, out hit, Mathf.Infinity))
                 {
-
-                    /*if (hit.collider.gameObject.CompareTag("Smash Point"))
+                    if (hit.collider.CompareTag("Smash Point"))
                     {
+                        hit.collider.GetComponent<SmashPoint>().DestroyThisObject();
+                    }
 
-                    }*/
-                    hit.collider.GetComponent<SmashPoint>().DestroyThisObject();
+                    if (hit.collider.CompareTag("Relic"))
+                    {
+                        hit.collider.GetComponent<Artifact>().OnTap();
+                    }
                 }
-
-                
             }
             if (Input.GetTouch(i).phase == TouchPhase.Moved)
             {
@@ -69,11 +67,11 @@ public class playerControlScript : MonoBehaviour
                 // Create a particle if hit
                 Physics.Raycast(ray, out hit, Mathf.Infinity);
 
-                if (hit.collider.gameObject.tag == "Dirt")
+                if (hit.collider.gameObject.CompareTag("Dirt"))
                 {
                     Destroy(hit.collider.gameObject);
-  
                 }
+                
             }
             
         }

@@ -5,8 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Startscreen menu
-  - Smash Point
   - Dirt
+  - Relic
+  - Smash Point
   layers:
   - Default
   - TransparentFX
