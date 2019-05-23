@@ -6,6 +6,7 @@ public class LayerSpawner : MonoBehaviour
 {
     public GameObject[] layers;
     public int holeDepth;
+    public int stoneLayerSmashPoints;
     // Start is called before the first frame update
     void Start()
     {

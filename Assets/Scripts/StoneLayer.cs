@@ -8,7 +8,7 @@ using Random = UnityEngine.Random;
 public class StoneLayer : MonoBehaviour
 {
     public int health;
-    public int amountOfSmashPoints;
+    int amountOfSmashPoints;
     public GameObject smashPointPrefab;
     public GameObject[] smashPoints;
     public GameObject canvasObj;
@@ -17,6 +17,7 @@ public class StoneLayer : MonoBehaviour
 
     public StoneLayer instance;
     private bool hpDebug;
+    public GameObject gameManager;
 
 
     private void Awake()
@@ -27,6 +28,8 @@ public class StoneLayer : MonoBehaviour
 
     private void Start()
     {
+        gameManager = GameObject.Find("GameManager");
+        amountOfSmashPoints = gameManager.GetComponent<LayerSpawner>().stoneLayerSmashPoints;
         canvasObj = GameObject.Find("Canvas").transform.GetChild(0).gameObject;
         health = amountOfSmashPoints;
         smashPoints = new GameObject[amountOfSmashPoints];
@@ -34,8 +37,12 @@ public class StoneLayer : MonoBehaviour
         for (int i = 0; i < smashPoints.Length; i++)
         {
             GameObject newSmashpoint = Instantiate(smashPointPrefab,transform.position,Quaternion.identity, gameObject.transform);
-            newSmashpoint.transform.localPosition = new Vector3(Random.Range(0, 23f), 0.4f, Random.Range(0, 23f));
+            newSmashpoint.transform.localPosition = new Vector3(Random.Range(0, 13f), 0.4f, Random.Range(0, 13f));
             smashPoints[i] = newSmashpoint;
+        }
+        if (amountOfSmashPoints <= 0)
+        {
+            Destroy(gameObject);
         }
     }
     public void DecreaseHP()

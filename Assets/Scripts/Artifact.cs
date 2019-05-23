@@ -9,6 +9,7 @@ public class Artifact : MonoBehaviour
     public Transform MoveHere;
     [SerializeField]
     float speed;
+    public GameObject[] dirt;
 
 
     private void Start()
