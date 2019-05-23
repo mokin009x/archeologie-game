@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Unity.Collections;
+using UnityEngine.SceneManagement;
 
 public class playerControlScript : MonoBehaviour
 {
@@ -14,28 +15,43 @@ public class playerControlScript : MonoBehaviour
     public GameObject particle;
     public GameObject dragParticle;
     public RaycastHit dragHit;
+    public TextMeshProUGUI counter;
+
+    private int toolLevel;
    // public GameObject hitCube;
 
 
     private void Start()
-    { 
-      //  hitCube = GameObject.Find("Cube");
-//        hitCube.gameObject.SetActive(false);
+    {
+        counter= GameObject.Find("Canvas").transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>();
+        if (PlayerData.instance.GetCurrentSceneName() == "Level 1")
+        {
+            toolLevel = PlayerData.instance.GetToolLevel();
+        }
     }
 
    
 
-    void OnGUI()
-    {
-       
-    }
+    
 
     void Update()
     {
+        TouchInputCheck();
+        LevelCheat();
+        if (SceneManager.GetActiveScene().name == "Level 1")
+        { 
+            
+            counter.text = PlayerData.instance.GetCredits().ToString();
+        }
+    }
+
+    public void TouchInputCheck()
+    {
         
-    
         for (int i = 0; i < Input.touchCount; ++i)
         {
+            
+            //pickaxe
             if (Input.GetTouch(i).phase == TouchPhase.Began)
             {
                 // Construct a ray from the current touch coordinates
@@ -49,6 +65,7 @@ public class playerControlScript : MonoBehaviour
                     if (hit.collider.CompareTag("Smash Point"))
                     {
                         hit.collider.GetComponent<SmashPoint>().DestroyThisObject();
+                        ToolEffectMoneyIncrease();
                     }
 
                     if (hit.collider.CompareTag("Relic"))
@@ -57,6 +74,8 @@ public class playerControlScript : MonoBehaviour
                     }
                 }
             }
+            
+            //Shovel
             if (Input.GetTouch(i).phase == TouchPhase.Moved)
             {
                 // Construct a ray from the current touch coordinates
@@ -75,48 +94,23 @@ public class playerControlScript : MonoBehaviour
             }
             
         }
-    
+    }
 
-       
-        /*// Handle screen touches.
-        if (Input.touchCount > 0)
+
+    void LevelCheat()
+    {
+        if (Input.GetKeyDown(KeyCode.A))
         {
-            Touch touch = Input.GetTouch(0);
-
-            // Move the cube if the screen has the finger moving.
-            if (touch.phase == TouchPhase.Moved)
-            {
-                Vector2 pos = touch.position;
-                pos.x = (pos.x - width) / width;
-                pos.y = (pos.y - height) / height;
-                position = new Vector3(-pos.x, pos.y, 0.0f);
-
-                // Position the cube.
-                transform.position = new Vector3(-position.x * 150, 0, position.y * 150);
-            }
-
-          
-        }*/
-
-        
-        
-        /*
-
-        for (int i = 0; i < Input.touchCount; ++i)
-        {
-            if (Input.GetTouch(i).phase == TouchPhase.Began)
-            {
-                // Construct a ray from the current touch coordinates
-                Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
-
-                // Create a particle if hit
-                if (Physics.Raycast(ray))
-                {
-                    Instantiate(particle, transform.position, transform.rotation);
-                }
-            }
+            PlayerData.instance.toolLevel = 1;
+            toolLevel = PlayerData.instance.toolLevel;
         }
-*/
+    }
 
+    public void ToolEffectMoneyIncrease()
+    {
+        if (toolLevel == 1)
+        {
+            PlayerData.instance.AddCredits(10);
+        }
     }
 }

@@ -13,9 +13,11 @@ public class ArtifactInspect : MonoBehaviour
     public int speed;
     public Vector3 originalPosition;
     public Vector3 originalRotation;
+    private bool clicked;
 
     private void Start()
     {
+        clicked = false;
         //pickupableObjects = new List<GameObject>();
         examineMode = false;
     }
@@ -26,9 +28,10 @@ public class ArtifactInspect : MonoBehaviour
         ClickObject();
 
         IsClicked();
+        MoveObject();
 
         //ExitExamineMode();
-       // Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward, Color.red);
+        // Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward, Color.red);
     }
 
     void ClickObject()
@@ -36,7 +39,7 @@ public class ArtifactInspect : MonoBehaviour
         
         for (int i = 0; i < Input.touchCount; ++i) 
         {
-            if (Input.GetTouch(i).phase == TouchPhase.Began) 
+            if (Input.GetTouch(i).phase == TouchPhase.Began && examineMode == false)
             {
                     // Construct a ray from the current touch coordinates
                     Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
@@ -49,28 +52,26 @@ public class ArtifactInspect : MonoBehaviour
                     for (int j = 0; j < pickupableObjects.Count; j++) 
                     {
                         if(hit.collider.gameObject == pickupableObjects[j]) 
-                        {
-                                pickupObj = pickupableObjects[j];
-                                originalPosition = pickupObj.gameObject.transform.position;
-                                originalRotation = pickupObj.gameObject.transform.rotation.eulerAngles;
-                                //originalPosition = pickupObj.transform.position;
-                        
-                                pickupObj.transform.position = Vector3.MoveTowards(pickupObj.transform.position, examinePosition.transform.position , speed * Time.deltaTime );
-                                //pickupObj.transform.position = examinePosition.transform.position;
-
-                                //Time.timeScale = 0;
-
-                                examineMode = true;
+                        { 
+                            clicked = true;
+                            pickupObj = pickupableObjects[j]; 
+                            originalPosition = pickupObj.gameObject.transform.position; 
+                            originalRotation = pickupObj.gameObject.transform.rotation.eulerAngles;
+                            examineMode = true;
                         }
                     }
                 }
+
+                
             } 
         }
     }
+    
+    
 
     void IsClicked()
     {
-        if(examineMode == true)
+        if(examineMode == true && clicked == false)
         {
             float rotateSpeed = 3f;
 
@@ -82,11 +83,28 @@ public class ArtifactInspect : MonoBehaviour
         }
     }
 
+    public void MoveObject()
+    {
+        if (clicked == true && examineMode == true)
+        {
+            pickupObj.transform.position = Vector3.MoveTowards(pickupObj.transform.position, examinePosition.transform.position , speed * Time.deltaTime );
+
+            if (pickupObj.transform.position == examinePosition.transform.position)
+            {
+                clicked = false;
+            }
+        }
+
+    }
+
     public void ExitExamineMode()
     {
-       
+        if (clicked == false)
+        {
             pickupObj.transform.position = originalPosition;
             pickupObj.transform.eulerAngles = originalRotation;
-            examineMode = false;
+            examineMode = false;   
+        }
+           
     }
 }

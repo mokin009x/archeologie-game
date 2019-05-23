@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerData : MonoBehaviour
 {
     public static PlayerData instance;
     public int credits;
+    public int toolLevel;
 
     
     public void Awake()
@@ -19,6 +21,7 @@ public class PlayerData : MonoBehaviour
         }
 
         credits = 0;
+        toolLevel = 0;
     }
 
     // Start is called before the first frame update
@@ -32,6 +35,15 @@ public class PlayerData : MonoBehaviour
         {
             PlayerPrefs.SetInt("Credits", credits);
         }
+
+        if (PlayerPrefs.HasKey("ToolLevel"))
+        {
+            toolLevel = PlayerPrefs.GetInt("ToolLevel");
+        }
+        else
+        {
+            PlayerPrefs.SetInt("ToolLevel", toolLevel);
+        }
     }
 
     // Update is called once per frame
@@ -42,13 +54,7 @@ public class PlayerData : MonoBehaviour
             AddCredits(100);
             Debug.Log(credits);
         }
-
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            BuyUpgrade(50);
-            Debug.Log(credits);
-        }
-
+        
         if (Input.GetKeyDown(KeyCode.L))
         {
             PlayerPrefs.SetInt("Credits", credits);
@@ -63,7 +69,7 @@ public class PlayerData : MonoBehaviour
         credits += amount;
     }
 
-    public void BuyUpgrade(int amount)
+    public void DecreaseCredits(int amount)
     {
         credits -= amount;
     }
@@ -71,5 +77,15 @@ public class PlayerData : MonoBehaviour
     public int GetCredits()
     {
         return credits;
+    }
+
+    public int GetToolLevel()
+    {
+        return toolLevel;
+    }
+
+    public string GetCurrentSceneName()
+    {
+        return SceneManager.GetActiveScene().name;
     }
 }
