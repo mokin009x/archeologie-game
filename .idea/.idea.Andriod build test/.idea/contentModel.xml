@@ -16,6 +16,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Artifact.cs" t="Include" />
+          <e p="ArtifactInspect.cs" t="Include" />
           <e p="Erazer.cs" t="Include" />
           <e p="GridMaker.cs" t="Include" />
           <e p="GridSpawner.cs" t="Include" />
@@ -23,6 +24,7 @@
           <e p="MeshCreator.cs" t="Include" />
           <e p="playerControlScript.cs" t="Include" />
           <e p="PlayerData.cs" t="Include" />
+          <e p="SceneLoader.cs" t="Include" />
           <e p="SceneSwitchScript.cs" t="Include" />
           <e p="SmashPoint.cs" t="Include" />
           <e p="StoneLayer.cs" t="Include" />

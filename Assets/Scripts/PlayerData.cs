@@ -1,12 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerData : MonoBehaviour
 {
-    public int credits;
     public static PlayerData instance;
+    public int credits;
 
+    
     public void Awake()
     {
         if (instance == null)
@@ -18,16 +17,25 @@ public class PlayerData : MonoBehaviour
         {
             Destroy(this);
         }
+
+        credits = 0;
     }
-    
+
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        if (PlayerPrefs.HasKey("Credits"))
+        {
+            credits = PlayerPrefs.GetInt("Credits");
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Credits", credits);
+        }
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.O))
         {
@@ -37,20 +45,17 @@ public class PlayerData : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.I))
         {
-           DecreaseCredits(50); 
-           Debug.Log(credits);
+            BuyUpgrade(50);
+            Debug.Log(credits);
         }
 
         if (Input.GetKeyDown(KeyCode.L))
         {
-            PlayerPrefs.SetInt("Credits",credits);
+            PlayerPrefs.SetInt("Credits", credits);
             PlayerPrefs.Save();
         }
 
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            credits = PlayerPrefs.GetInt("Credits");
-        }
+        if (Input.GetKeyDown(KeyCode.K)) credits = PlayerPrefs.GetInt("Credits");
     }
 
     public void AddCredits(int amount)
@@ -58,8 +63,13 @@ public class PlayerData : MonoBehaviour
         credits += amount;
     }
 
-    public void DecreaseCredits(int amount)
+    public void BuyUpgrade(int amount)
     {
         credits -= amount;
+    }
+
+    public int GetCredits()
+    {
+        return credits;
     }
 }
