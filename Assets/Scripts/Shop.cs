@@ -1,16 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Transactions;
+using TMPro;
 using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
     private int currentCredits;
     private int currentToolLevel;
+    public GameObject moneyCounter;
     
     // Start is called before the first frame update
     void Start()
     {
+        moneyCounter.GetComponent<TextMeshProUGUI>().text = PlayerData.instance.GetCredits().ToString();
         currentToolLevel = 0;
         currentCredits = 0;
     }
@@ -25,12 +28,12 @@ public class Shop : MonoBehaviour
     {
         currentCredits = PlayerData.instance.GetCredits();
         currentToolLevel = PlayerData.instance.GetToolLevel();
-        if (currentToolLevel <= 0)
+        if (currentToolLevel <= Mathf.Infinity)
         {
             if (currentCredits >= price)
             {
                 PlayerData.instance.DecreaseCredits(price);
-                PlayerData.instance.toolLevel = 1;
+                PlayerData.instance.toolLevel ++;
                 currentToolLevel = PlayerData.instance.toolLevel;
             }
             else
@@ -44,5 +47,8 @@ public class Shop : MonoBehaviour
         }
         
         Debug.Log(PlayerData.instance.toolLevel + " tool level");
+        moneyCounter.GetComponent<TextMeshProUGUI>().text = PlayerData.instance.GetCredits().ToString();
+
     }
+    
 }

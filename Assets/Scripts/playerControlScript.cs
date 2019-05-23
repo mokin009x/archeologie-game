@@ -108,9 +108,8 @@ public class playerControlScript : MonoBehaviour
 
     public void ToolEffectMoneyIncrease()
     {
-        if (toolLevel == 1)
-        {
-            PlayerData.instance.AddCredits(10);
-        }
+        
+            PlayerData.instance.AddCredits(10 * toolLevel);
+        
     }
 }
