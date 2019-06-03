@@ -23,7 +23,7 @@ public class playerControlScript : MonoBehaviour
 
     private void Start()
     {
-        counter= GameObject.Find("Canvas").transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>();
+        //counter= GameObject.Find("Canvas").transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>();
         if (PlayerData.instance.GetCurrentSceneName() == "Level 1")
         {
             toolLevel = PlayerData.instance.GetToolLevel();
@@ -71,6 +71,7 @@ public class playerControlScript : MonoBehaviour
                     if (hit.collider.CompareTag("Relic"))
                     {
                         hit.collider.GetComponent<Artifact>().OnTap();
+                        PlayerData.instance.AddCredits(200);
                     }
                 }
             }
