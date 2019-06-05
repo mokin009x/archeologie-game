@@ -17,16 +17,18 @@ public class playerControlScript : MonoBehaviour
     public RaycastHit dragHit;
     public TextMeshProUGUI counter;
 
-    private int toolLevel;
+    private int pikLevel;
+    private int SchepLevel;
    // public GameObject hitCube;
 
 
     private void Start()
     {
         //counter= GameObject.Find("Canvas").transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>();
-        if (PlayerData.instance.GetCurrentSceneName() == "Level 1")
+        if (OnSceneLoadScript.CheckActiveScene("Level 1") == true )
         {
-            toolLevel = PlayerData.instance.GetToolLevel();
+            pikLevel = PlayerData.instance.GetPikhouweelLevel();
+            SchepLevel = PlayerData.instance.GetSchepLevel();
         }
     }
 
@@ -37,7 +39,6 @@ public class playerControlScript : MonoBehaviour
     void Update()
     {
         TouchInputCheck();
-        LevelCheat();
         if (SceneManager.GetActiveScene().name == "Level 1")
         { 
             
@@ -51,7 +52,6 @@ public class playerControlScript : MonoBehaviour
         for (int i = 0; i < Input.touchCount; ++i)
         {
             
-            //pickaxe
             if (Input.GetTouch(i).phase == TouchPhase.Began)
             {
                 // Construct a ray from the current touch coordinates
@@ -65,7 +65,7 @@ public class playerControlScript : MonoBehaviour
                     if (hit.collider.CompareTag("Smash Point"))
                     {
                         hit.collider.GetComponent<SmashPoint>().DestroyThisObject();
-                        ToolEffectMoneyIncrease();
+                        PikToolEffectMoneyIncrease(pikLevel);
                     }
 
                     if (hit.collider.CompareTag("Relic"))
@@ -90,27 +90,28 @@ public class playerControlScript : MonoBehaviour
                 if (hit.collider.gameObject.CompareTag("Dirt"))
                 {
                     Destroy(hit.collider.gameObject);
+                    ShovelToolEffectMoneyIncrease(SchepLevel);
                 }
                 
             }
             
         }
     }
-
-
-    void LevelCheat()
+    
+    public void PikToolEffectMoneyIncrease(int pikLvl)
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (pikLvl > 1)
         {
-            PlayerData.instance.toolLevel = 1;
-            toolLevel = PlayerData.instance.toolLevel;
+            PlayerData.instance.AddCredits(10 * pikLvl);
+
         }
     }
 
-    public void ToolEffectMoneyIncrease()
+    public void ShovelToolEffectMoneyIncrease(int SchepLvl)
     {
-        
-            PlayerData.instance.AddCredits(10 * toolLevel);
-        
+        if (SchepLvl > 1)
+        {
+            PlayerData.instance.AddCredits(1 * SchepLvl);
+        }
     }
 }

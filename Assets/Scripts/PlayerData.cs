@@ -1,11 +1,16 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerData : MonoBehaviour
 {
     public static PlayerData instance;
     public int credits;
-    public int toolLevel;
+    public int pikhouweelLevel;
+    public int schepLevel;
+    public int startPrice;
+    public int mapProgression;
+    public string currentScene;
 
     
     public void Awake()
@@ -19,32 +24,16 @@ public class PlayerData : MonoBehaviour
         {
             Destroy(this);
         }
-
-        credits = 0;
-        toolLevel = 0;
     }
 
     // Start is called before the first frame update
     private void Start()
     {
-        if (PlayerPrefs.HasKey("Credits"))
-        {
-            credits = PlayerPrefs.GetInt("Credits");
-        }
-        else
-        {
-            PlayerPrefs.SetInt("Credits", credits);
-        }
-
-        if (PlayerPrefs.HasKey("ToolLevel"))
-        {
-            toolLevel = PlayerPrefs.GetInt("ToolLevel");
-        }
-        else
-        {
-            PlayerPrefs.SetInt("ToolLevel", toolLevel);
-        }
+       // PlayerPrefs.DeleteAll();
+        CheckPlayerPrefs();
     }
+
+    
 
     // Update is called once per frame
     private void Update()
@@ -61,7 +50,92 @@ public class PlayerData : MonoBehaviour
             PlayerPrefs.Save();
         }
 
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            mapProgression ++;
+            PlayerPrefs.SetInt("MapProgression", mapProgression);
+        }
+        
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            mapProgression --;
+            PlayerPrefs.SetInt("MapProgression", mapProgression);
+        }
+        
+
         if (Input.GetKeyDown(KeyCode.K)) credits = PlayerPrefs.GetInt("Credits");
+        
+    }
+    
+    public void CheckPlayerPrefs()
+    {
+        if (PlayerPrefs.HasKey("Credits"))
+        {
+            credits = PlayerPrefs.GetInt("Credits");
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Credits", credits);
+        }
+
+        if (PlayerPrefs.HasKey("PikhouweelLevel"))
+        {
+            pikhouweelLevel = PlayerPrefs.GetInt("PikhouweelLevel");
+        }
+        else
+        {
+            PlayerPrefs.SetInt("PikhouweelLevel", 1);
+            pikhouweelLevel = PlayerPrefs.GetInt("PikhouweelLevel");
+
+        }
+        
+        if (PlayerPrefs.HasKey("SchepLevel"))
+        {
+            schepLevel = PlayerPrefs.GetInt("SchepLevel");
+        }
+        else
+        {
+            PlayerPrefs.SetInt("SchepLevel", 1);
+            schepLevel = PlayerPrefs.GetInt("SchepLevel");
+
+        }
+
+        if (PlayerPrefs.HasKey("StartPrice"))
+        {
+            startPrice = PlayerPrefs.GetInt("StartPrice");
+        }
+        else
+        {
+            PlayerPrefs.SetInt("StartPrice", 125);
+            startPrice = PlayerPrefs.GetInt("StartPrice");
+        }
+
+        if (PlayerPrefs.HasKey("MapProgression"))
+        {
+            mapProgression = PlayerPrefs.GetInt("MapProgression");
+        }
+        else
+        {
+            PlayerPrefs.SetInt("MapProgression", 1);
+            mapProgression = PlayerPrefs.GetInt("MapProgression");
+        }
+    }
+
+    public void CheckCollectedRelics()
+    {
+        
+    }
+
+
+    private void ChangedActiveScene(Scene current, Scene next)
+    {
+        string currentName = current.name;
+
+        if (currentName == null)
+        {
+            // Scene1 has been removed
+            currentName = "Replaced";
+        }
     }
 
     public void AddCredits(int amount)
@@ -79,13 +153,29 @@ public class PlayerData : MonoBehaviour
         return credits;
     }
 
-    public int GetToolLevel()
+    public int GetPikhouweelLevel()
     {
-        return toolLevel;
+        return pikhouweelLevel;
+    }
+    
+    public int GetSchepLevel()
+    {
+        return schepLevel;
     }
 
     public string GetCurrentSceneName()
     {
-        return SceneManager.GetActiveScene().name;
+        currentScene = SceneManager.GetActiveScene().name;
+        return currentScene;
+    }
+
+    public int GetStartPrice()
+    {
+        return startPrice;
+    }
+
+    public int GetMapProgression()
+    {
+        return mapProgression;
     }
 }
