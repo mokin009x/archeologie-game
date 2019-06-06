@@ -30,7 +30,7 @@ public class StoneLayer : MonoBehaviour
     {
         gameManager = GameObject.Find("GameManager");
         amountOfSmashPoints = gameManager.GetComponent<LayerSpawner>().stoneLayerSmashPoints;
-        canvasObj = GameObject.Find("Canvas").transform.GetChild(0).gameObject;
+        //canvasObj = GameObject.Find("Standard UI").transform.GetChild(0).gameObject;
         health = amountOfSmashPoints;
         smashPoints = new GameObject[amountOfSmashPoints];
         counterCheck = new bool[health];
