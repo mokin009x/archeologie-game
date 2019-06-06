@@ -19,6 +19,9 @@ public class playerControlScript : MonoBehaviour
 
     private int pikLevel;
     private int SchepLevel;
+/*
+    public float
+*/
    // public GameObject hitCube;
 
 
@@ -30,11 +33,23 @@ public class playerControlScript : MonoBehaviour
             pikLevel = PlayerData.instance.GetPikhouweelLevel();
             SchepLevel = PlayerData.instance.GetSchepLevel();
         }
+
+        StartCoroutine(LevelTimer());
     }
 
-   
-
-    
+    IEnumerator LevelTimer()
+    {
+        float duration = 3f; // 3 seconds you can change this 
+        //to whatever you want
+        float timer = 0;
+        while(timer <= duration)
+        {
+            timer += Time.deltaTime;
+            Debug.Log(timer);
+            yield return null;
+        }
+        Debug.Log("Timer done");
+    }
 
     void Update()
     {

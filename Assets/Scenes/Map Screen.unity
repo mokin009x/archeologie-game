@@ -1210,6 +1210,10 @@ MonoBehaviour:
   credits: 0
   pikhouweelLevel: 0
   schepLevel: 0
+  startPrice: 0
+  mapProgression: 0
+  currentScene: 
+  relicCollection: 000000000000
 --- !u!4 &556859080
 Transform:
   m_ObjectHideFlags: 0
@@ -3398,7 +3402,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fd338bba7725424887d16201dcc039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: {fileID: 0}
+  money: {fileID: 41225927}
+  progression: 0
 --- !u!1 &1865162885
 GameObject:
   m_ObjectHideFlags: 0
