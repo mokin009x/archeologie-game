@@ -23,8 +23,10 @@
           <e p="LayerSpawner.cs" t="Include" />
           <e p="MapScreenUiRefresh.cs" t="Include" />
           <e p="MeshCreator.cs" t="Include" />
+          <e p="OnSceneLoadScript.cs" t="Include" />
           <e p="playerControlScript.cs" t="Include" />
           <e p="PlayerData.cs" t="Include" />
+          <e p="RotationLock.cs" t="Include" />
           <e p="SceneLoader.cs" t="Include" />
           <e p="SceneSwitchScript.cs" t="Include" />
           <e p="Shop.cs" t="Include" />

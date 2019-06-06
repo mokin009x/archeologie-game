@@ -1208,7 +1208,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   credits: 0
-  toolLevel: 0
+  pikhouweelLevel: 0
+  schepLevel: 0
 --- !u!4 &556859080
 Transform:
   m_ObjectHideFlags: 0

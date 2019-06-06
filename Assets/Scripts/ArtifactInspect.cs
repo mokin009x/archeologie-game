@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ArtifactInspect : MonoBehaviour
 {
@@ -17,6 +19,19 @@ public class ArtifactInspect : MonoBehaviour
 
     private void Start()
     {
+        if (OnSceneLoadScript.CheckActiveScene(SceneManager.GetActiveScene().name))
+        {
+            for (int i = 0; i < PlayerData.instance.relicCollection.Length; i++)
+            {
+                var relicBool = PlayerData.instance.relicCollection[i];
+                if (relicBool == false)
+                {
+                    pickupableObjects[i].GetComponent<MeshRenderer>().enabled = false;
+                    pickupableObjects[i].GetComponent<BoxCollider>().enabled = false;
+                }
+            }
+        }
+
         clicked = false;
         //pickupableObjects = new List<GameObject>();
         examineMode = false;
@@ -36,42 +51,37 @@ public class ArtifactInspect : MonoBehaviour
 
     void ClickObject()
     {
-        
-        for (int i = 0; i < Input.touchCount; ++i) 
+        for (int i = 0; i < Input.touchCount; ++i)
         {
             if (Input.GetTouch(i).phase == TouchPhase.Began && examineMode == false)
             {
-                    // Construct a ray from the current touch coordinates
-                    Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
-                    RaycastHit hit;
+                // Construct a ray from the current touch coordinates
+                Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
+                RaycastHit hit;
 
-                    // Create a particle if hit
-                    
-                if (Physics.Raycast(ray, out hit, Mathf.Infinity)) 
+                // Create a particle if hit
+
+                if (Physics.Raycast(ray, out hit, Mathf.Infinity))
                 {
-                    for (int j = 0; j < pickupableObjects.Count; j++) 
+                    for (int j = 0; j < pickupableObjects.Count; j++)
                     {
-                        if(hit.collider.gameObject == pickupableObjects[j]) 
-                        { 
+                        if (hit.collider.gameObject == pickupableObjects[j])
+                        {
                             clicked = true;
-                            pickupObj = pickupableObjects[j]; 
-                            originalPosition = pickupObj.gameObject.transform.position; 
+                            pickupObj = pickupableObjects[j];
+                            originalPosition = pickupObj.gameObject.transform.position;
                             originalRotation = pickupObj.gameObject.transform.rotation.eulerAngles;
                             examineMode = true;
                         }
                     }
                 }
-
-                
-            } 
+            }
         }
     }
-    
-    
 
     void IsClicked()
     {
-        if(examineMode == true && clicked == false)
+        if (examineMode == true && clicked == false)
         {
             float rotateSpeed = 3f;
 
@@ -87,14 +97,13 @@ public class ArtifactInspect : MonoBehaviour
     {
         if (clicked == true && examineMode == true)
         {
-            pickupObj.transform.position = Vector3.MoveTowards(pickupObj.transform.position, examinePosition.transform.position , speed * Time.deltaTime );
+            pickupObj.transform.position = Vector3.MoveTowards(pickupObj.transform.position, examinePosition.transform.position, speed * Time.deltaTime);
 
             if (pickupObj.transform.position == examinePosition.transform.position)
             {
                 clicked = false;
             }
         }
-
     }
 
     public void ExitExamineMode()
@@ -103,8 +112,7 @@ public class ArtifactInspect : MonoBehaviour
         {
             pickupObj.transform.position = originalPosition;
             pickupObj.transform.eulerAngles = originalRotation;
-            examineMode = false;   
+            examineMode = false;
         }
-           
     }
 }
