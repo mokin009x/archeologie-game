@@ -19,6 +19,7 @@ public class playerControlScript : MonoBehaviour
 
     private int pikLevel;
     private int SchepLevel;
+    public string selectedTool;
 /*
     public float
 */
@@ -27,6 +28,7 @@ public class playerControlScript : MonoBehaviour
 
     private void Start()
     {
+        selectedTool = "None";
         //counter= GameObject.Find("Canvas").transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>();
         if (OnSceneLoadScript.CheckActiveScene("Level 1") == true )
         {
@@ -59,6 +61,16 @@ public class playerControlScript : MonoBehaviour
             
             counter.text = PlayerData.instance.GetCredits().ToString();
         }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            selectedTool = "Pikhouweel";
+        }
+        
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            selectedTool = "Schep";
+        }
     }
 
     public void TouchInputCheck()
@@ -67,7 +79,7 @@ public class playerControlScript : MonoBehaviour
         for (int i = 0; i < Input.touchCount; ++i)
         {
             
-            if (Input.GetTouch(i).phase == TouchPhase.Began)
+            if (Input.GetTouch(i).phase == TouchPhase.Began && selectedTool == "Pikhouweel")
             {
                 // Construct a ray from the current touch coordinates
                 Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
@@ -92,7 +104,7 @@ public class playerControlScript : MonoBehaviour
             }
             
             //Shovel
-            if (Input.GetTouch(i).phase == TouchPhase.Moved)
+            if (Input.GetTouch(i).phase == TouchPhase.Moved && selectedTool == "Schep")
             {
                 // Construct a ray from the current touch coordinates
                 Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
@@ -112,7 +124,12 @@ public class playerControlScript : MonoBehaviour
             
         }
     }
-    
+
+    public void SelectTool(string tool)
+    {
+        selectedTool = tool;
+    }
+
     public void PikToolEffectMoneyIncrease(int pikLvl)
     {
         if (pikLvl > 1)
