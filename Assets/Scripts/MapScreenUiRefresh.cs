@@ -16,7 +16,7 @@ public class MapScreenUiRefresh : MonoBehaviour
     {
         
         money.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = PlayerData.instance.GetCredits().ToString();
-        if (OnSceneLoadScript.CheckActiveScene("Map Screen"))
+        if (OnSceneLoadScript.CheckActiveScene(SceneManager.GetActiveScene().name))
         {
             progression = PlayerData.instance.GetMapProgression();
         }

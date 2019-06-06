@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Transactions;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Shop : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class Shop : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+      
         moneyCounter.GetComponentInChildren<TextMeshProUGUI>().text = PlayerData.instance.GetCredits().ToString();
         pikhouweelCounter.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "Level " + PlayerData.instance.GetPikhouweelLevel().ToString();
         
@@ -35,7 +37,6 @@ public class Shop : MonoBehaviour
             pikhouweelPrice.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "Prijs " + price.ToString();
             schepPrice.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "Prijs " + price2.ToString();
         }
-        
         /*currentToolLevel = 1;
         currentCredits = 0;*/
         // dit moeten we miss uitcommenten 

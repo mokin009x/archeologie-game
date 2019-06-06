@@ -18,6 +18,12 @@ public class OnSceneLoadScript : MonoBehaviour
         {
             return true;
         }
+
+        if (currentScene == "Museum")
+        {
+            PlayerData.instance.CheckCollectedRelics();
+            return true;
+        }
         
         return false;
     }

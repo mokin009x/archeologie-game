@@ -11,6 +11,7 @@ public class PlayerData : MonoBehaviour
     public int startPrice;
     public int mapProgression;
     public string currentScene;
+    public bool[] relicCollection = new bool[6];
 
     
     public void Awake()
@@ -61,6 +62,14 @@ public class PlayerData : MonoBehaviour
             mapProgression --;
             PlayerPrefs.SetInt("MapProgression", mapProgression);
         }
+
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            PlayerPrefs.SetInt("Relic 1",1);
+            PlayerPrefs.SetInt("Relic 3",1);
+            PlayerPrefs.SetInt("Relic 5",1);
+            PlayerPrefs.Save();
+        }
         
 
         if (Input.GetKeyDown(KeyCode.K)) credits = PlayerPrefs.GetInt("Credits");
@@ -76,6 +85,8 @@ public class PlayerData : MonoBehaviour
         else
         {
             PlayerPrefs.SetInt("Credits", credits);
+            credits = PlayerPrefs.GetInt("Credits");
+
         }
 
         if (PlayerPrefs.HasKey("PikhouweelLevel"))
@@ -123,18 +134,76 @@ public class PlayerData : MonoBehaviour
 
     public void CheckCollectedRelics()
     {
-        
-    }
-
-
-    private void ChangedActiveScene(Scene current, Scene next)
-    {
-        string currentName = current.name;
-
-        if (currentName == null)
+        if (PlayerPrefs.HasKey("Relic 1"))
         {
-            // Scene1 has been removed
-            currentName = "Replaced";
+            if (PlayerPrefs.GetInt("Relic 1") == 1)
+            {
+                relicCollection[0] = true;
+            }
+            else
+            {
+                relicCollection[0] = false;
+            }
+        }
+
+        if (PlayerPrefs.HasKey("Relic 2"))
+        {
+            if (PlayerPrefs.GetInt("Relic 1") == 1)
+            {
+                relicCollection[1] = true;
+            }
+            else
+            {
+                relicCollection[1] = false;
+            }
+        }
+
+        if (PlayerPrefs.HasKey("Relic 3"))
+        {
+            if (PlayerPrefs.GetInt("Relic 1") == 1)
+            {
+                relicCollection[2] = true;
+            }
+            else
+            {
+                relicCollection[2] = false;
+            }
+        }
+
+        if (PlayerPrefs.HasKey("Relic 4"))
+        {
+            if (PlayerPrefs.GetInt("Relic 1") == 1)
+            {
+                relicCollection[3] = true;
+            }
+            else
+            {
+                relicCollection[3] = false;
+            }
+        }
+
+        if (PlayerPrefs.HasKey("Relic 5"))
+        {
+            if (PlayerPrefs.GetInt("Relic 1") == 1)
+            {
+                relicCollection[4] = true;
+            }
+            else
+            {
+                relicCollection[4] = false;
+            }
+        }
+        
+        if (PlayerPrefs.HasKey("Relic 6"))
+        {
+            if (PlayerPrefs.GetInt("Relic 1") == 1)
+            {
+                relicCollection[5] = true;
+            }
+            else
+            {
+                relicCollection[5] = false;
+            }
         }
     }
 
