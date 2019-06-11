@@ -20,36 +20,41 @@ public class playerControlScript : MonoBehaviour
     private int pikLevel;
     private int SchepLevel;
     public string selectedTool;
-/*
-    public float
-*/
-   // public GameObject hitCube;
+    public float duration;
 
+    public GameObject timerObj;
+    public bool gameOver;
+    public GameObject gameOverScreen;
+
+    private void Awake()
+    {
+        gameOver = false;
+    }
 
     private void Start()
-    {
+    { 
         selectedTool = "None";
         //counter= GameObject.Find("Canvas").transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>();
-        if (OnSceneLoadScript.CheckActiveScene("Level 1") == true )
-        {
-            pikLevel = PlayerData.instance.GetPikhouweelLevel();
-            SchepLevel = PlayerData.instance.GetSchepLevel();
-        }
-
+        
+        pikLevel = PlayerData.instance.GetPikhouweelLevel();
+        SchepLevel = PlayerData.instance.GetSchepLevel(); 
         StartCoroutine(LevelTimer());
     }
 
     IEnumerator LevelTimer()
     {
-        float duration = 3f; // 3 seconds you can change this 
+        
         //to whatever you want
         float timer = 0;
-        while(timer <= duration)
+        while(duration >= 0)
         {
-            timer += Time.deltaTime;
-            Debug.Log(timer);
+            string test = Mathf.RoundToInt(duration -= Time.deltaTime).ToString();
+            timerObj.transform.GetComponentInChildren<TextMeshProUGUI>().text = "Tijd " + test;
+            //Debug.Log(timer);
             yield return null;
         }
+
+        gameOver = true;
         Debug.Log("Timer done");
     }
 
@@ -71,11 +76,15 @@ public class playerControlScript : MonoBehaviour
         {
             selectedTool = "Schep";
         }
+
+        if (gameOver == true)
+        {
+            gameOverScreen.SetActive(true);  
+        }
     }
 
     public void TouchInputCheck()
     {
-        
         for (int i = 0; i < Input.touchCount; ++i)
         {
             
@@ -124,6 +133,8 @@ public class playerControlScript : MonoBehaviour
             
         }
     }
+
+    
 
     public void SelectTool(string tool)
     {

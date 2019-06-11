@@ -86,7 +86,6 @@ public class PlayerData : MonoBehaviour
         {
             PlayerPrefs.SetInt("Credits", credits);
             credits = PlayerPrefs.GetInt("Credits");
-
         }
 
         if (PlayerPrefs.HasKey("PikhouweelLevel"))
@@ -97,9 +96,8 @@ public class PlayerData : MonoBehaviour
         {
             PlayerPrefs.SetInt("PikhouweelLevel", 1);
             pikhouweelLevel = PlayerPrefs.GetInt("PikhouweelLevel");
-
         }
-        
+
         if (PlayerPrefs.HasKey("SchepLevel"))
         {
             schepLevel = PlayerPrefs.GetInt("SchepLevel");
@@ -108,7 +106,6 @@ public class PlayerData : MonoBehaviour
         {
             PlayerPrefs.SetInt("SchepLevel", 1);
             schepLevel = PlayerPrefs.GetInt("SchepLevel");
-
         }
 
         if (PlayerPrefs.HasKey("StartPrice"))
@@ -193,7 +190,7 @@ public class PlayerData : MonoBehaviour
                 relicCollection[4] = false;
             }
         }
-        
+
         if (PlayerPrefs.HasKey("Relic 6"))
         {
             if (PlayerPrefs.GetInt("Relic 1") == 1)
@@ -210,11 +207,13 @@ public class PlayerData : MonoBehaviour
     public void AddCredits(int amount)
     {
         credits += amount;
+        PlayerPrefs.SetInt("Credits", credits);
     }
 
     public void DecreaseCredits(int amount)
     {
         credits -= amount;
+        PlayerPrefs.SetInt("Credits", credits);
     }
 
     public int GetCredits()
