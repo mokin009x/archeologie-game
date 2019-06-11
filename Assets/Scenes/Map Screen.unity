@@ -2999,14 +2999,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 530066612}
     m_Modifications:
-    - target: {fileID: 188360, guid: 61f00a819c0a5a546b7eea7a104470d7, type: 3}
-      propertyPath: m_Name
-      value: Framerate Watcher
-      objectReference: {fileID: 0}
-    - target: {fileID: 188360, guid: 61f00a819c0a5a546b7eea7a104470d7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 22458840, guid: 61f00a819c0a5a546b7eea7a104470d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3090,6 +3082,14 @@ PrefabInstance:
     - target: {fileID: 22458840, guid: 61f00a819c0a5a546b7eea7a104470d7, type: 3}
       propertyPath: m_Pivot.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 188360, guid: 61f00a819c0a5a546b7eea7a104470d7, type: 3}
+      propertyPath: m_Name
+      value: Framerate Watcher
+      objectReference: {fileID: 0}
+    - target: {fileID: 188360, guid: 61f00a819c0a5a546b7eea7a104470d7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61f00a819c0a5a546b7eea7a104470d7, type: 3}
@@ -3893,7 +3893,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fd338bba7725424887d16201dcc039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: {fileID: 0}
+  money: {fileID: 41225927}
   progression: 0
 --- !u!1 &1865162885
 GameObject:
