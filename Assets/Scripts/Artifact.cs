@@ -10,7 +10,7 @@ public class Artifact : MonoBehaviour
     [SerializeField]
     float speed;
     public GameObject[] dirt;
-
+    public GameObject levelClearScreen;
 
     private void Start()
     {
@@ -21,6 +21,11 @@ public class Artifact : MonoBehaviour
         if (clicked)
         {
             transform.position = Vector3.MoveTowards(transform.position, MoveHere.position, speed * Time.deltaTime);
+        }
+
+        if (transform.position == MoveHere.position)
+        {
+            levelClearScreen.SetActive(true);
         }
     }
     public void OnTap()
