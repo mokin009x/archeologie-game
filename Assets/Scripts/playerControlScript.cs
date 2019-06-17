@@ -32,21 +32,20 @@ public class playerControlScript : MonoBehaviour
     }
 
     private void Start()
-    { 
+    {
         selectedTool = "None";
         //counter= GameObject.Find("Canvas").transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>();
-        
+
         pikLevel = PlayerData.instance.GetPikhouweelLevel();
-        SchepLevel = PlayerData.instance.GetSchepLevel(); 
+        SchepLevel = PlayerData.instance.GetSchepLevel();
         StartCoroutine(LevelTimer());
     }
 
     IEnumerator LevelTimer()
     {
-        
         //to whatever you want
         float timer = 0;
-        while(duration >= 0)
+        while (duration >= 0)
         {
             string test = Mathf.RoundToInt(duration -= Time.deltaTime).ToString();
             timerObj.transform.GetComponentInChildren<TextMeshProUGUI>().text = "Tijd " + test;
@@ -62,8 +61,7 @@ public class playerControlScript : MonoBehaviour
     {
         TouchInputCheck();
         if (SceneManager.GetActiveScene().name == "Level 1")
-        { 
-            
+        {
             counter.text = PlayerData.instance.GetCredits().ToString();
         }
 
@@ -71,7 +69,7 @@ public class playerControlScript : MonoBehaviour
         {
             selectedTool = "Pikhouweel";
         }
-        
+
         if (Input.GetKeyDown(KeyCode.W))
         {
             selectedTool = "Schep";
@@ -79,7 +77,7 @@ public class playerControlScript : MonoBehaviour
 
         if (gameOver == true)
         {
-            gameOverScreen.SetActive(true);  
+            gameOverScreen.SetActive(true);
         }
     }
 
@@ -87,13 +85,11 @@ public class playerControlScript : MonoBehaviour
     {
         for (int i = 0; i < Input.touchCount; ++i)
         {
-            
             if (Input.GetTouch(i).phase == TouchPhase.Began && selectedTool == "Pikhouweel")
             {
                 // Construct a ray from the current touch coordinates
                 Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
                 RaycastHit hit;
-                
 
                 // Create a particle if hit
                 if (Physics.Raycast(ray, out hit, Mathf.Infinity))
@@ -111,14 +107,13 @@ public class playerControlScript : MonoBehaviour
                     }
                 }
             }
-            
+
             //Shovel
             if (Input.GetTouch(i).phase == TouchPhase.Moved && selectedTool == "Schep")
             {
                 // Construct a ray from the current touch coordinates
                 Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
                 RaycastHit hit;
-                
 
                 // Create a particle if hit
                 Physics.Raycast(ray, out hit, Mathf.Infinity);
@@ -128,13 +123,9 @@ public class playerControlScript : MonoBehaviour
                     Destroy(hit.collider.gameObject);
                     ShovelToolEffectMoneyIncrease(SchepLevel);
                 }
-                
             }
-            
         }
     }
-
-    
 
     public void SelectTool(string tool)
     {
@@ -146,7 +137,6 @@ public class playerControlScript : MonoBehaviour
         if (pikLvl > 1)
         {
             PlayerData.instance.AddCredits(10 * pikLvl);
-
         }
     }
 

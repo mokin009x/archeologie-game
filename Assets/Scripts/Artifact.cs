@@ -30,6 +30,7 @@ public class Artifact : MonoBehaviour
     }
     public void OnTap()
     {
+        PlayerPrefs.SetInt("Relic 1",1);
         clicked = true;
     }
 }
