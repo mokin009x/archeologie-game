@@ -124,6 +124,21 @@ public class playerControlScript : MonoBehaviour
                     ShovelToolEffectMoneyIncrease(SchepLevel);
                 }
             }
+            
+            if (Input.GetTouch(i).phase == TouchPhase.Began && selectedTool == "Schep")
+            {
+                // Construct a ray from the current touch coordinates
+                Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
+                RaycastHit hit;
+
+                // Create a particle if hit
+                Physics.Raycast(ray, out hit, Mathf.Infinity);
+                if (hit.collider.CompareTag("Relic"))
+                {
+                    hit.collider.GetComponent<Artifact>().OnTap();
+                    PlayerData.instance.AddCredits(200);
+                }
+            }
         }
     }
 

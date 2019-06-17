@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Artifact : MonoBehaviour
 {
@@ -30,7 +31,20 @@ public class Artifact : MonoBehaviour
     }
     public void OnTap()
     {
-        PlayerPrefs.SetInt("Relic 1",1);
+        if (SceneManager.GetActiveScene().name == "Level 1")
+        {
+            PlayerPrefs.SetInt("Kandelaar",1);
+            
+
+        }
+        
+        if (SceneManager.GetActiveScene().name == "Level 2")
+        {
+            PlayerPrefs.SetInt("Spaarpot",1);
+
+        }
+        PlayerPrefs.Save();
         clicked = true;
     }
 }
+    

@@ -29,6 +29,11 @@ public class ArtifactInspect : MonoBehaviour
                     pickupableObjects[i].GetComponent<MeshRenderer>().enabled = false;
                     pickupableObjects[i].GetComponent<BoxCollider>().enabled = false;
                 }
+                else
+                {
+                    pickupableObjects[i].GetComponent<MeshRenderer>().enabled = true;
+                    pickupableObjects[i].GetComponent<BoxCollider>().enabled = true;
+                }
             }
         }
 

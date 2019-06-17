@@ -30,7 +30,7 @@ public class PlayerData : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-       // PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteAll();
         CheckPlayerPrefs();
     }
 
@@ -131,74 +131,80 @@ public class PlayerData : MonoBehaviour
 
     public void CheckCollectedRelics()
     {
-        if (PlayerPrefs.HasKey("Relic 1"))
+        if (PlayerPrefs.HasKey("Kandelaar"))
         {
-            if (PlayerPrefs.GetInt("Relic 1") == 1)
+            if (PlayerPrefs.GetInt("Kandelaar") == 1)
             {
                 relicCollection[0] = true;
             }
             else
             {
+                PlayerPrefs.SetInt("Kandelaar", 0);
                 relicCollection[0] = false;
             }
         }
 
-        if (PlayerPrefs.HasKey("Relic 2"))
+        if (PlayerPrefs.HasKey("Spaarpot"))
         {
-            if (PlayerPrefs.GetInt("Relic 1") == 1)
+            if (PlayerPrefs.GetInt("Spaarpot") == 1)
             {
                 relicCollection[1] = true;
             }
             else
             {
+                PlayerPrefs.SetInt("Spaarpot", 0);
                 relicCollection[1] = false;
             }
         }
 
-        if (PlayerPrefs.HasKey("Relic 3"))
+        if (PlayerPrefs.HasKey("Lavabo"))
         {
-            if (PlayerPrefs.GetInt("Relic 1") == 1)
+            if (PlayerPrefs.GetInt("Lavabo") == 1)
             {
                 relicCollection[2] = true;
             }
             else
             {
+                PlayerPrefs.SetInt("Lavabo", 0);
                 relicCollection[2] = false;
             }
         }
 
         if (PlayerPrefs.HasKey("Relic 4"))
         {
-            if (PlayerPrefs.GetInt("Relic 1") == 1)
+            if (PlayerPrefs.GetInt("Relic 4") == 1)
             {
                 relicCollection[3] = true;
             }
             else
             {
+                PlayerPrefs.SetInt("Relic 4", 0);
                 relicCollection[3] = false;
             }
         }
 
         if (PlayerPrefs.HasKey("Relic 5"))
         {
-            if (PlayerPrefs.GetInt("Relic 1") == 1)
+            if (PlayerPrefs.GetInt("Relic 5") == 1)
             {
                 relicCollection[4] = true;
             }
             else
             {
+                PlayerPrefs.SetInt("Relic 5", 0);
                 relicCollection[4] = false;
             }
         }
 
         if (PlayerPrefs.HasKey("Relic 6"))
         {
-            if (PlayerPrefs.GetInt("Relic 1") == 1)
+            if (PlayerPrefs.GetInt("Relic 6") == 1)
             {
                 relicCollection[5] = true;
             }
             else
             {
+                PlayerPrefs.SetInt("Relic 6", 0);
                 relicCollection[5] = false;
             }
         }
