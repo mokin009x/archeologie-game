@@ -27,6 +27,7 @@ public class Artifact : MonoBehaviour
         if (transform.position == MoveHere.position)
         {
             levelClearScreen.SetActive(true);
+            
         }
     }
     public void OnTap()

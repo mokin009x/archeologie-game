@@ -50,6 +50,10 @@ public class playerControlScript : MonoBehaviour
             string test = Mathf.RoundToInt(duration -= Time.deltaTime).ToString();
             timerObj.transform.GetComponentInChildren<TextMeshProUGUI>().text = "Tijd " + test;
             //Debug.Log(timer);
+            if (PlayerData.instance)
+            {
+                
+            }
             yield return null;
         }
 
