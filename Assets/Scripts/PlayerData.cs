@@ -30,7 +30,7 @@ public class PlayerData : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        PlayerPrefs.DeleteAll();
+        //PlayerPrefs.DeleteAll();
         CheckPlayerPrefs();
     }
 
