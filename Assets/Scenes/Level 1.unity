@@ -9773,6 +9773,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 650061436836698486, guid: 1bad2dd1ac06a1544b1b8bc009c6d8c7,
+        type: 3}
+      propertyPath: m_text
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 650061436836698486, guid: 1bad2dd1ac06a1544b1b8bc009c6d8c7,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 650061437667280406, guid: 1bad2dd1ac06a1544b1b8bc009c6d8c7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
