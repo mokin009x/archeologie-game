@@ -68,6 +68,11 @@ public class playerControlScript : MonoBehaviour
         {
             counter.text = PlayerData.instance.GetCredits().ToString();
         }
+        
+        if (SceneManager.GetActiveScene().name == "Level 2")
+        {
+            counter.text = PlayerData.instance.GetCredits().ToString();
+        }
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
