@@ -26,6 +26,7 @@ public class Artifact : MonoBehaviour
 
         if (transform.position == MoveHere.position)
         {
+            PlayerData.instance.currentLevelClear = true;
             levelClearScreen.SetActive(true);
             
         }

@@ -11,11 +11,13 @@ public class PlayerData : MonoBehaviour
     public int startPrice;
     public int mapProgression;
     public string currentScene;
+    public bool currentLevelClear;
     public bool[] relicCollection = new bool[6];
 
     
     public void Awake()
     {
+        currentLevelClear = false;
         if (instance == null)
         {
             instance = this;

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Diagnostics.Tracing;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -44,25 +43,26 @@ public class playerControlScript : MonoBehaviour
     IEnumerator LevelTimer()
     {
         //to whatever you want
-        float timer = 0;
-        while (duration >= 0)
+        do
         {
-            string test = Mathf.RoundToInt(duration -= Time.deltaTime).ToString();
-            timerObj.transform.GetComponentInChildren<TextMeshProUGUI>().text = "Tijd " + test;
+            string time = Mathf.RoundToInt(duration -= Time.deltaTime).ToString();
+            timerObj.transform.GetComponentInChildren<TextMeshProUGUI>().text =  time;
             //Debug.Log(timer);
-            if (PlayerData.instance)
+            if (PlayerData.instance.currentLevelClear == true)
             {
-                
+                PlayerData.instance.currentLevelClear = false;
+                yield break;
             }
             yield return null;
-        }
-
+        } while (duration >= 0);
         gameOver = true;
-        Debug.Log("Timer done");
+        
     }
 
     void Update()
     {
+        
+
         TouchInputCheck();
         if (SceneManager.GetActiveScene().name == "Level 1")
         {
