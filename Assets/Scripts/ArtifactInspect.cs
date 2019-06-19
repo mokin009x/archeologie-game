@@ -16,6 +16,9 @@ public class ArtifactInspect : MonoBehaviour
     public Vector3 originalPosition;
     public Vector3 originalRotation;
     private bool clicked;
+    public GameObject relicText;
+    public string relikInfo1;
+    public string relikInfo2;
 
     private void Start()
     {
@@ -54,6 +57,25 @@ public class ArtifactInspect : MonoBehaviour
         // Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward, Color.red);
     }
 
+    public void RelicInformation(string objName)
+    {
+        if (examineMode == true && relicText.activeSelf == false)
+        {
+            relicText.SetActive(true);
+            if (objName == "RelikInfo1")
+            {
+                relicText.transform.GetComponentInChildren<TextMeshProUGUI>().text = relikInfo1;
+
+            }
+
+            if (objName == "RelikInfo2")
+            {
+                relicText.transform.GetComponentInChildren<TextMeshProUGUI>().text = relikInfo2;
+
+            }
+        }
+    }
+
     void ClickObject()
     {
         for (int i = 0; i < Input.touchCount; ++i)
@@ -77,6 +99,7 @@ public class ArtifactInspect : MonoBehaviour
                             originalPosition = pickupObj.gameObject.transform.position;
                             originalRotation = pickupObj.gameObject.transform.rotation.eulerAngles;
                             examineMode = true;
+                            RelicInformation(pickupObj.name);
                         }
                     }
                 }
